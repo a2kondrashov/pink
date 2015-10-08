@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Pink: Form</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Pink</h1>
+        <a class="toggle" href=""></a>
+        <nav>
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Конкурсы</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="intro">
+      <div class="container">
+        <h2>Конкурс на самое безбашеное путешествие с Пинк</h2>
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      </div>
+    </section>
+
+    <div class="contest">
+      <div class="container">
+
+        <form action="/action" method="post">
+          <div class="form-names">
+            <label>Имя: *</label> 
+            <input type="text" name="name" placeholder="Введите ваше имя" required>
+            <label>Фамилия: *</label> 
+            <input type="text" name="surname" placeholder="Укажите фамилию" required>
+            <label>Отчество:</label> 
+            <input type="text" name="patronymic" placeholder="Ну и отчество тоже">
+          </div>
+          <div class="form-applications">
+            <h3>С каким приложением путешествовали? *</h3>
+            <label><input type="radio" name="app" value="ios-app" checked>Pink для iOS</label> 
+            <label><input type="radio" name="app" value="android-app">Pink на Android</label> 
+            <label><input type="radio" name="app" value="winphone-app">Windows Phone</label> 
+          </div>
+          <div class="form-dates">
+            <h3>Когда вы путешествовали? *</h3>
+            <input type="date" name="departure-date" value="2015-04-01" required>
+            <label>Дата выезда</label>
+              <div class="days-counter">
+                <a class="subtract-day" href="#">&minus;</a>
+                  <input type="text" name="duration" placeholder="10 дней" >
+                <a class="add-day" href="#">&plus;</a>
+                <label>Продолжительность</label>
+              </div>
+            <input type="date" name="return-date" value="2015-04-01" readonly>
+            <label>Дата возвращения</label>
+          </div>
+          <div class="form-companions">
+            <h3>Количество попутчиков *</h3>
+            <div class="form-companions-counter">
+              <a class="subtract-companion" href="#">&minus;</a>
+                <input type="text" name="companions" placeholder="2 чел" readonly>
+              <a class="add-companion" href="#">&plus;</a>
+            </div>
+            <div class="form-companion-details">
+              <label>№</label>
+              <input type="text" name="companion-enum" value="1" readonly>
+              <label>Имя: *</label>
+              <input type="text" name="companion-name" placeholder="Введите ваше имя" required>
+              <label>Прозвище:</label>
+              <input type="text" name="companion-nick" placeholder="Ну как же без этого!">
+            </div>
+            <div class="form-companion-details">
+              <label>№</label>
+              <input type="text" name="companion-enum" value="2" readonly>
+              <label>Имя: *</label>
+              <input type="text" name="companion-name" placeholder="Введите ваше имя" required>
+              <label>Прозвище:</label>
+              <input type="text" name="companion-nick" placeholder="Ну как же без этого!">
+            </div>
+          </div>
+          <div class="form-achievements">
+            <h3>Ваши безбашенные достижения в путешествии</h3>
+            <label><input type="checkbox" name="shark" checked>Сделал селфи с акулой</label>
+            <label><input type="checkbox" name="beach" checked>Обгорел на пляже</label>
+            <label><input type="checkbox" name="chuck_norris">Видел Чака Норриса</label>
+            <label><input type="checkbox" name="souvenirs">Накупил сувениров</label>
+            <label><input type="checkbox" name="tower" checked>Удержал башню</label>
+            <label><input type="checkbox" name="hotel">Разгромил отель</label>
+          </div>
+          <div class="button">
+            <input type="submit" value="Отправить форму">
+          </div>
+        </form>
+
+        <div class="form-photos">
+          <h3>Ваши фотографии из поездки *</h3>
+          <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="photo">
+            <div class="button">
+              <input type="submit" value="Загрузить фото">
+            </div>
+          </form>
+          <div class="uploaded-photos">
+            <div class="uploaded-photo">
+              <a class="del-img" href="#"></a>
+              <img src="http://placehold.it/50x50" width="50" height="50" alt="img-1.jpg">
+              <p>img-1.jpg</p>
+            </div>
+            <div class="uploaded-photo">
+              <a class="del-img" href="#"></a>
+              <img src="http://placehold.it/50x50" width="50" height="50" alt="img-2.jpg">
+              <p>img-2.jpg</p>
+            </div>
+            <div class="uploaded-photo">
+              <a class="del-img" href="#"></a>
+              <img src="http://placehold.it/50x50" width="50" height="50" alt="img-3.jpg">
+              <p>img-3.jpg</p>
+            </div>
+            <div class="uploaded-photo">
+              <a class="del-img" href="#"></a>
+              <img src="http://placehold.it/50x50" width="50" height="50" alt="img-4.jpg">
+              <p>img-4.jpg</p>
+            </div>
+            <div class="uploaded-photo">
+              <a class="del-img" href="#"></a>
+              <img src="http://placehold.it/50x50" width="50" height="50" alt="img-5.jpg">
+              <p>img-5.jpg</p>
+            </div>
+            <div class="uploaded-photo">
+              <a class="del-img" href="#"></a>
+              <img src="http://placehold.it/50x50" width="50" height="50" alt="img-6.jpg">
+              <p>img-6.jpg</p>
+            </div>
+            <div class="uploaded-photo">
+              <a class="del-img" href="#"></a>
+              <img src="http://placehold.it/50x50" width="50" height="50" alt="img-7.jpg">
+              <p>img-7.jpg</p>
+            </div>
+            <div class="uploaded-photo">
+              <a class="del-img" href="#"></a>
+              <img src="http://placehold.it/50x50" width="50" height="50" alt="img-8.jpg">
+              <p>img-8.jpg</p>
+            </div>
+          </div>
+        </div>
+
+        <p><span>*</span> — обязательные поля</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <h2>Pink</h2>
+          <img src="http://placehold.it/50x50" width="50" height="50" alt="Pink logo">
+        </div>
+        <div class="footer-social">
+          <a class="tw" href="#">Twitter</a>
+          <a class="fb" href="#">Facebook</a>
+          <a class="yt" href="#">You Tube</a>
+        </div>
+        <div class="footer-copyleft">
+          <p>Разработано</p>
+          <img src="http://placehold.it/20x20" width="20" height="20" alt="HTML Academy">
+        </div>
+      </div>
+    </footer>
+
+    <section class="success-popup">
+      <div class="container">
+        <h3>Ваша заявка отправлена</h3>
+        <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.</p>
+        <div class="button">
+          <a href="#">Закрыть окно</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="failure-popup">
+      <div class="container">
+        <h3>Что-то пошло не так!</h3>
+        <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+        <div class="button">
+          <a href="#">Ок</a>
+        </div>
+      </div>
+    </section>
+
+  <!-- <script src="js/script.js"></script> -->
+
+  </body>
+</html>
