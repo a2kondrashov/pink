@@ -52,36 +52,44 @@
             <input type="date" name="departure-date" value="2015-04-01" required>
             <label>Дата выезда</label>
               <div class="days-counter">
-                <a class="subtract-day" href="#">&minus;</a>
-                  <input type="text" name="duration" placeholder="10 дней" >
-                <a class="add-day" href="#">&plus;</a>
+                <a class="subtract-day" href="#"></a>
+                  <input type="text" name="duration" size="3" placeholder="10 дней" >
+                <a class="add-day" href="#"></a>
                 <label>Продолжительность</label>
               </div>
             <input type="date" name="return-date" value="2015-04-01" readonly>
             <label>Дата возвращения</label>
           </div>
-          <div class="form-companions">
-            <h3>Количество попутчиков *</h3>
-            <div class="form-companions-counter">
-              <a class="subtract-companion" href="#">&minus;</a>
-                <input type="text" name="companions" placeholder="2 чел" readonly>
-              <a class="add-companion" href="#">&plus;</a>
+          <div class="companions">
+            <h3 class="companions__title">Количество попутчиков *</h3>
+            <div class="companions-counter">
+              <a class="companions-counter__input companions-counter__input--subtract" href="#"></a>
+                <input class="companions-counter__input" type="text" name="companions" size="3" placeholder="2 чел">
+              <a class="companions-counter__input companions-counter__input--add" href="#"></a>
             </div>
-            <div class="form-companion-details">
-              <label>№</label>
-              <input type="text" name="companion-enum" value="1" readonly>
-              <label>Имя: *</label>
-              <input type="text" name="companion-name" placeholder="Введите ваше имя" required>
-              <label>Прозвище:</label>
-              <input type="text" name="companion-nick" placeholder="Ну как же без этого!">
+            <div class="companion-details">
+              <div class="companion-details__col">
+                <span class="companion-details__label">№</span>
+                <span class="companion-details__input companion-details__input--num">1</span>
+              </div>
+              <div class="companion-details__col">
+                <label class="companion-details__label">Имя: *</label>
+                <input class="companion-details__input" type="text" name="companion-name" placeholder="Введите ваше имя" required>
+                <label class="companion-details__label">Прозвище:</label>
+                <input class="companion-details__input" type="text" name="companion-nick" placeholder="Ну как же без этого!">
+              </div>
             </div>
-            <div class="form-companion-details">
-              <label>№</label>
-              <input type="text" name="companion-enum" value="2" readonly>
-              <label>Имя: *</label>
-              <input type="text" name="companion-name" placeholder="Введите ваше имя" required>
-              <label>Прозвище:</label>
-              <input type="text" name="companion-nick" placeholder="Ну как же без этого!">
+            <div class="companion-details">
+              <div class="companion-details__col">
+                <span class="companion-details__label">№</span>
+                <span class="companion-details__input companion-details__input--num">2</span>
+              </div>
+              <div class="companion-details__col">
+                <label class="companion-details__label">Имя: *</label>
+                <input class="companion-details__input" type="text" name="companion-name" placeholder="Введите ваше имя"  required>
+                <label class="companion-details__label">Прозвище:</label>
+                <input class="companion-details__input" type="text" name="companion-nick" placeholder="Ну как же без этого!">
+              </div>
             </div>
           </div>
           <div class="form-achievements">
