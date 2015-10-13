@@ -1,209 +1,381 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Pink: Form</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-  </head>
-  <body>
-
-    <header class="main-header">
-      <div class="main-header__inner">
-        <h1 class="main-header__title">Pink</h1>
-        <a class="main-header__toggle main-header__toggle--close" href=""></a>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__list-item"><a href="#">Информация</a></li>
-            <li class="main-nav__list-item"><a href="#">Блог</a></li>
-            <li class="main-nav__list-item"><a href="#">Отзывы</a></li>
-            <li class="main-nav__list-item"><a href="#">Конкурсы</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <section class="intro">
-      <div class="intro_inner">
-        <h2 class="intro_title">Конкурс на самое безбашеное путешествие с Пинк</h2>
-      </div>
-    </section>
-
-    <div class="contest">
-      <div class="contest_inner">
-
-        <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <form class="contest__form" action="/action" method="post">
-
-          <div class="contestant">
-            <label class="contestant__label">Имя: *</label> 
-            <input class="contestant__input" type="text" name="name" placeholder="Введите ваше имя" required>
-            <label class="contestant__label">Фамилия: *</label> 
-            <input class="contestant__input" type="text" name="surname" placeholder="Укажите фамилию" required>
-            <label class="contestant__label">Отчество:</label> 
-            <input class="contestant__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-          </div>
-
-          <div class="applications">
-            <h3 class="applications__title">С каким приложением путешествовали? *</h3>
-            <label><input class="applications__input" type="radio" name="app" value="ios-app" checked>Pink для iOS</label> 
-            <label><input class="applications__input" type="radio" name="app" value="android-app">Pink на Android</label> 
-            <label><input class="applications__input" type="radio" name="app" value="winphone-app">Windows Phone</label> 
-          </div>
-
-          <div class="dates">
-            <h3 class="dates__title">Когда вы путешествовали? *</h3>
-            <input class="dates__input" type="date" name="departure-date" value="2015-04-01" required>
-            <label class="dates__label">Дата выезда</label>
-            <div class="dates-counter">
-              <a class="dates-counter__subtract" href="#"></a>
-              <input class="dates-counter__input" type="text" name="duration" size="3" placeholder="10 дней" >
-              <a class="dates-counter__add" href="#"></a>
-              <label class="dates-counter__label">Продолжительность</label>
-            </div>
-            <input class="dates__input" type="date" name="return-date" value="2015-04-01" readonly>
-            <label class="dates__label">Дата возвращения</label>
-          </div>
-
-          <div class="companions">
-            <h3 class="companions__title">Количество попутчиков *</h3>
-            <div class="companions-counter">
-              <a class="companions-counter__subtract" href="#"></a>
-              <input class="companions-counter__input" type="text" name="companions" size="3" placeholder="2 чел">
-              <a class="companions-counter__add" href="#"></a>
-            </div>
-
-            <div class="companion-details">
-              <div class="companion-details__col">
-                <span class="companion-details__label">№</span>
-                <span class="companion-details__num">1</span>
-              </div>
-              <div class="companion-details__col">
-                <label class="companion-details__label">Имя: *</label>
-                <input class="companion-details__input" type="text" name="companion-name" placeholder="Введите ваше имя" required>
-                <label class="companion-details__label">Прозвище:</label>
-                <input class="companion-details__input" type="text" name="companion-nick" placeholder="Ну как же без этого!">
-              </div>
-            </div>
-
-            <div class="companion-details">
-              <div class="companion-details__col">
-                <span class="companion-details__label">№</span>
-                <span class="companion-details__num">2</span>
-              </div>
-              <div class="companion-details__col">
-                <label class="companion-details__label">Имя: *</label>
-                <input class="companion-details__input" type="text" name="companion-name" placeholder="Введите ваше имя"  required>
-                <label class="companion-details__label">Прозвище:</label>
-                <input class="companion-details__input" type="text" name="companion-nick" placeholder="Ну как же без этого!">
-              </div>
-            </div>
-          </div>
-
-          <div class="achievements">
-            <h3 class="achievements__title">Ваши безбашенные достижения в путешествии</h3>
-            <label><input class="achievements__input" type="checkbox" name="shark" checked>Сделал селфи с акулой</label>
-            <label><input class="achievements__input" type="checkbox" name="beach" checked>Обгорел на пляже</label>
-            <label><input class="achievements__input" type="checkbox" name="chuck_norris">Видел Чака Норриса</label>
-            <label><input class="achievements__input" type="checkbox" name="souvenirs">Накупил сувениров</label>
-            <label><input class="achievements__input" type="checkbox" name="tower" checked>Удержал башню</label>
-            <label><input class="achievements__input" type="checkbox" name="hotel">Разгромил отель</label>
-          </div>
-
-          <div class="photos">
-            <h3 class="photos__title">Ваши фотографии из поездки *</h3>
-            <input class="photos__input" type="file" name="photo">
-            <div class="uploaded-photos">
-              <div class="uploaded-item">
-                <a class="uploaded-item__del" href="#"></a>
-                <img class="uploaded-item__img" src="http://placehold.it/50x50" width="50" height="50" alt="img-1.jpg">
-                <p class="uploaded-item__filename">img-1.jpg</p>
-              </div>
-              <div class="uploaded-item">
-                <a class="uploaded-item__del" href="#"></a>
-                <img class="uploaded-item__img" src="http://placehold.it/50x50" width="50" height="50" alt="img-2.jpg">
-                <p class="uploaded-item__filename">img-2.jpg</p>
-              </div>
-              <div class="uploaded-item">
-                <a class="uploaded-item__del" href="#"></a>
-                <img class="uploaded-item__img" src="http://placehold.it/50x50" width="50" height="50" alt="img-3.jpg">
-                <p class="uploaded-item__filename">img-3.jpg</p>
-              </div>
-              <div class="uploaded-item">
-                <a class="uploaded-item__del" href="#"></a>
-                <img class="uploaded-item__img" src="http://placehold.it/50x50" width="50" height="50" alt="img-4.jpg">
-                <p class="uploaded-item__filename">img-4.jpg</p>
-              </div>
-              <div class="uploaded-item">
-                <a class="uploaded-item__del" href="#"></a>
-                <img class="uploaded-item__img" src="http://placehold.it/50x50" width="50" height="50" alt="img-5.jpg">
-                <p class="uploaded-item__filename">img-5.jpg</p>
-              </div>
-              <div class="uploaded-item">
-                <a class="uploaded-item__del" href="#"></a>
-                <img class="uploaded-item__img" src="http://placehold.it/50x50" width="50" height="50" alt="img-6.jpg">
-                <p class="uploaded-item__filename">img-6.jpg</p>
-              </div>
-              <div class="uploaded-item">
-                <a class="uploaded-item__del" href="#"></a>
-                <img class="uploaded-item__img" src="http://placehold.it/50x50" width="50" height="50" alt="img-7.jpg">
-                <p class="uploaded-item__filename">img-7.jpg</p>
-              </div>
-              <div class="uploaded-item">
-                <a class="uploaded-item__del" href="#"></a>
-                <img class="uploaded-item__img" src="http://placehold.it/50x50" width="50" height="50" alt="img-8.jpg">
-                <p class="uploaded-item__filename">img-8.jpg</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-button">
-            <input class="form-button__send" type="submit" value="Отправить форму">
-          </div>
-
-          <small class="form-footnote"><span class="form-footnote--color">*</span> — обязательные поля</small>
-        </form>
-      </div>
-    </div>
-
-    <footer class="main-footer">
-      <div class="main-footer__title">
-        <div class="logo">
-          <h2 class="logo__title">Pink</h2>
-          <img class="logo__img" src="http://placehold.it/50x50" width="50" height="50" alt="Pink logo">
-        </div>
-        <div class="social-block">
-          <a class="social-block__link social-block__link--tw" href="#">Twitter</a>
-          <a class="social-block__link social-block__link--fb" href="#">Facebook</a>
-          <a class="social-block__link social-block__link--yt" href="#">You Tube</a>
-        </div>
-        <div class="copyright">
-          <p class="copyright__text">Разработано</p>
-          <img class="copyright__logo" src="http://placehold.it/20x20" width="20" height="20" alt="HTML Academy">
-        </div>
-      </div>
-    </footer>
-
-    <section class="success-popup">
-      <div class="success-popup__inner">
-        <h3 class="success-popup__title">Ваша заявка отправлена</h3>
-        <p class="success-popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.</p>
-        <div class="modal-form-button">
-          <a class="modal-form-button__link" href="#">Закрыть окно</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="failure-popup">
-      <div class="failure-popup__inner">
-        <h3 class="failure-popup__title">Что-то пошло не так!</h3>
-        <p class="failure-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
-        <div class="modal-form-button">
-          <a class="modal-form-button__link" href="#">Ок</a>
-        </div>
-      </div>
-    </section>
-
-  <!-- <script src="js/script.js"></script> -->
-
-  </body>
+<head>
+	<meta charset="utf-8">
+	<title>Pink: Form</title>
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+	<!-- Main header -->
+	<header class="main-header">
+		<!-- Header title -->
+		<h1 class="main-header__title">
+			Pink
+		</h1>
+		<a class="main-header__toggle  main-header__toggle--close" href=""></a>
+		<!-- Main navigation -->
+		<nav class="main-nav">
+			<ul class="main-nav__list">
+				<li class="main-nav__item">
+					<a class="main-nav__link  main-nav__link--pick" href="#">
+						Информация
+					</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link  main-nav__link--pick" href="#">
+						Блог
+					</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link  main-nav__link--pick" href="#">
+						Отзывы
+					</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link  main-nav__link--pick" href="#">
+						Конкурсы
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Main -->
+	<div class="main">
+		<!-- Intro -->
+		<section class="intro">
+			<!-- Intro title-->
+			<h2 class="intro__title">
+				Конкурс на самое безбашеное путешествие с Пинк
+			</h2>
+		</section>
+		<!-- Promo -->
+		<section class="promo">
+			<p class="promo__text">
+				Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+			</p>
+		</section>
+		<!-- Form -->
+		<form class="form" action="/action" method="post">
+			<!-- User's full name -->
+			<div class="user-block">
+				<label class="user-block__label">
+					Имя: *
+				</label> 
+				<input class="user-block__input"
+				type="text" name="name" placeholder="Введите ваше имя" required
+				>
+				<label class="user-block__label">
+					Фамилия: *
+				</label> 
+				<input class="user-block__input"
+				type="text" name="surname" placeholder="Укажите фамилию" required
+				>
+				<label class="user-block__label">
+					Отчество:
+				</label> 
+				<input class="user-block__input"
+				type="text" name="patronymic" placeholder="Ну и отчество тоже"
+				>
+			</div>
+			<!-- Application's choice -->
+			<div class="applications">
+				<h3 class="applications__title">
+					С каким приложением путешествовали? *
+				</h3>
+				<label>
+					<input class="applications__input"
+					type="radio" name="app" value="ios-app" checked
+					>
+					Pink для iOS
+				</label> 
+				<label>
+					<input class="applications__input"
+					type="radio" name="app" value="android-app"
+					>
+					Pink на Android
+				</label> 
+				<label>
+					<input class="applications__input"
+					type="radio" name="app" value="winphone-app"
+					>
+					Windows Phone
+				</label> 
+			</div>
+			<!-- Travel date -->
+			<div class="dates">
+				<h3 class="dates__title">
+					Когда вы путешествовали? *
+				</h3>
+				<input class="dates__input"
+				type="date" name="departure-date" value="2015-04-01" required
+				>
+				<label class="dates__label">
+					Дата выезда
+				</label>
+				<div class="dates-counter">
+					<a class="dates-counter__subtract" href="#"></a>
+					<input class="dates-counter__input"
+					type="text" name="duration" size="3" placeholder="10 дней"
+					>
+					<a class="dates-counter__add" href="#"></a>
+					<label class="dates-counter__label">
+						Продолжительность
+					</label>
+				</div>
+				<input class="dates__input"
+				type="date" name="return-date" value="2015-04-01" readonly
+				>
+				<label class="dates__label">
+					Дата возвращения
+				</label>
+			</div>
+			<!-- Travel companions -->
+			<div class="companions">
+				<h3 class="companions__title">
+					Количество попутчиков *
+				</h3>
+				<!-- Companions quantity -->
+				<div class="companions-counter">
+					<a class="companions-counter__subtract" href="#"></a>
+					<input class="companions-counter__input"
+					type="text" name="companions" size="3" placeholder="2 чел"
+					>
+					<a class="companions-counter__add" href="#"></a>
+				</div>
+				<!-- Companion details -->
+				<div class="companion-details">
+					<div class="companion-details__col">
+						<span class="companion-details__label">№</span>
+						<span class="companion-details__num">1</span>
+					</div>
+					<div class="companion-details__col">
+						<label class="companion-details__label">
+							Имя: *
+						</label>
+						<input class="companion-details__input"
+						type="text" name="companion-name" placeholder="Введите ваше имя" required
+						>
+						<label class="companion-details__label">
+							Прозвище:
+						</label>
+						<input class="companion-details__input"
+						type="text" name="companion-nick" placeholder="Ну как же без этого!"
+						>
+					</div>
+				</div>
+				<!-- Companion details -->
+				<div class="companion-details">
+					<div class="companion-details__col">
+						<span class="companion-details__label">№</span>
+						<span class="companion-details__num">2</span>
+					</div>
+					<div class="companion-details__col">
+						<label class="companion-details__label">
+							Имя: *
+						</label>
+						<input class="companion-details__input"
+						type="text" name="companion-name" placeholder="Введите ваше имя" required
+						>
+						<label class="companion-details__label">
+							Прозвище:
+						</label>
+						<input class="companion-details__input"
+						type="text" name="companion-nick" placeholder="Ну как же без этого!"
+						>
+					</div>
+				</div>
+			</div>
+			<!-- Travel achievements -->
+			<div class="achievements">
+				<h3 class="achievements__title">
+					Ваши безбашенные достижения в путешествии
+				</h3>
+				<label>
+					<input class="achievements__input"
+					type="checkbox" name="shark" checked
+					>
+					Сделал селфи с акулой
+				</label>
+				<label>
+					<input class="achievements__input"
+					type="checkbox" name="beach" checked
+					>
+					Обгорел на пляже
+				</label>
+				<label>
+					<input class="achievements__input"
+					type="checkbox" name="chuck_norris"
+					>
+					Видел Чака Норриса
+				</label>
+				<label>
+					<input class="achievements__input"
+					type="checkbox" name="souvenirs"
+					>
+					Накупил сувениров
+				</label>
+				<label>
+					<input class="achievements__input"
+					type="checkbox" name="tower" checked
+					>
+					Удержал башню
+				</label>
+				<label>
+					<input class="achievements__input"
+					type="checkbox" name="hotel"
+					>
+					Разгромил отель
+				</label>
+			</div>
+			<!-- Travel photos -->
+			<div class="photos">
+				<h3 class="photos__title">
+					Ваши фотографии из поездки *
+				</h3>
+				<input class="photos__input"
+				type="file" name="photo"
+				>
+				<!-- Photo's preview -->
+				<div class="uploaded-photos">
+					<div class="uploaded-item">
+						<a class="uploaded-item__del" href="#"></a>
+						<img class="uploaded-item__img"
+						src="http://placehold.it/50x50" width="50" height="50" alt="img-1.jpg"
+						>
+						<p class="uploaded-item__filename">
+							img-1.jpg
+						</p>
+					</div>
+					<div class="uploaded-item">
+						<a class="uploaded-item__del" href="#"></a>
+						<img class="uploaded-item__img"
+						src="http://placehold.it/50x50" width="50" height="50" alt="img-2.jpg"
+						>
+						<p class="uploaded-item__filename">
+							img-2.jpg
+						</p>
+					</div>
+					<div class="uploaded-item">
+						<a class="uploaded-item__del" href="#"></a>
+						<img class="uploaded-item__img"
+						src="http://placehold.it/50x50" width="50" height="50" alt="img-3.jpg"
+						>
+						<p class="uploaded-item__filename">
+							img-3.jpg
+						</p>
+					</div>
+					<div class="uploaded-item">
+						<a class="uploaded-item__del" href="#"></a>
+						<img class="uploaded-item__img"
+						src="http://placehold.it/50x50" width="50" height="50" alt="img-6.jpg"
+						>
+						<p class="uploaded-item__filename">
+							img-6.jpg
+						</p>
+					</div>
+					<div class="uploaded-item">
+						<a class="uploaded-item__del" href="#"></a>
+						<img class="uploaded-item__img"
+						src="http://placehold.it/50x50" width="50" height="50" alt="img-6.jpg"
+						>
+						<p class="uploaded-item__filename">
+							img-6.jpg
+						</p>
+					</div>
+					<div class="uploaded-item">
+						<a class="uploaded-item__del" href="#"></a>
+						<img class="uploaded-item__img"
+						src="http://placehold.it/50x50" width="50" height="50" alt="img-6.jpg"
+						>
+						<p class="uploaded-item__filename">
+							img-6.jpg
+						</p>
+					</div>
+					<div class="uploaded-item">
+						<a class="uploaded-item__del" href="#"></a>
+						<img class="uploaded-item__img"
+						src="http://placehold.it/50x50" width="50" height="50" alt="img-8.jpg"
+						>
+						<p class="uploaded-item__filename">
+							img-8.jpg
+						</p>
+					</div>
+					<div class="uploaded-item">
+						<a class="uploaded-item__del" href="#"></a>
+						<img class="uploaded-item__img"
+						src="http://placehold.it/50x50" width="50" height="50" alt="img-8.jpg"
+						>
+						<p class="uploaded-item__filename">
+							img-8.jpg
+						</p>
+					</div>
+				</div>
+			</div>
+			<input class="form-button__send"
+			type="submit" value="Отправить форму"
+			>
+			<small class="form-footnote">
+				<span class="form-footnote--color">*</span> — обязательные поля
+			</small>
+		</form>
+	</div>
+	<!-- Main footer -->
+	<footer class="main-footer">
+		<div class="main-footer__title">
+			<div class="logo">
+				<h2 class="logo__title">
+					Pink
+				</h2>
+				<img class="logo__img"
+				src="http://placehold.it/50x50" width="50" height="50" alt="Pink logo"
+				>
+			</div>
+			<div class="social-block">
+				<a class="social-block__link social-block__link--tw" href="#">
+					Twitter
+				</a>
+				<a class="social-block__link social-block__link--fb" href="#">
+					Facebook
+				</a>
+				<a class="social-block__link social-block__link--yt" href="#">
+					You Tube
+				</a>
+			</div>
+			<div class="copyright">
+				<p class="copyright__text">
+					Разработано
+				</p>
+				<img class="copyright__logo"
+				src="http://placehold.it/20x20" width="20" height="20" alt="HTML Academy"
+				>
+			</div>
+		</div>
+	</footer>
+	<!-- Modal window success sending -->
+	<section class="success-popup">
+		<h3 class="success-popup__title">
+			Ваша заявка отправлена
+		</h3>
+		<p class="success-popup__text">
+			Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.
+		</p>
+		<a class="popup-button__link" href="#">
+			Закрыть окно
+		</a>
+	</section>
+	<!-- Modal windows failure sending -->
+	<section class="failure-popup">
+		<h3 class="failure-popup__title">
+			Что-то пошло не так!
+		</h3>
+		<p class="failure-popup__text">
+			Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
+		</p>
+		<a class="popup-button__link" href="#">
+			Ок
+		</a>
+	</section>
+	<!-- JS -->
+	<!-- <script src="js/script.js"></script> -->
+</body>
 </html>
