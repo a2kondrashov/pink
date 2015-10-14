@@ -52,9 +52,9 @@
 		</section>
 		<!-- Promo -->
 		<section class="promo">
-			<h2 class="promo__text">
+			<h3 class="promo__text">
 				Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-			</h2>
+			</h3>
 		</section>
 		<!-- Form -->
 		<form class="form" action="/action" method="post">
@@ -80,10 +80,10 @@
 				>
 			</div>
 			<!-- Application's choice -->
-			<div class="applications">
-				<h3 class="applications__title">
+			<fieldset class="applications">
+				<legend class="applications__title">
 					С каким приложением путешествовали? *
-				</h3>
+				</legend>
 				<label>
 					<input class="applications__input"
 					type="radio" name="app" value="ios-app" checked
@@ -102,12 +102,12 @@
 					>
 					Windows Phone
 				</label> 
-			</div>
+			</fieldset>
 			<!-- Travel date -->
-			<div class="dates">
-				<h3 class="dates__title">
+			<fieldset class="dates">
+				<legend class="dates__title">
 					Когда вы путешествовали? *
-				</h3>
+				</legend>
 				<input class="dates__input"
 				type="date" name="departure-date" value="2015-04-01" required
 				>
@@ -130,12 +130,12 @@
 				<label class="dates__label">
 					Дата возвращения
 				</label>
-			</div>
+			</fieldset>
 			<!-- Travel companions -->
-			<div class="companions">
-				<h3 class="companions__title">
+			<fieldset class="companions">
+				<legend class="companions__title">
 					Количество попутчиков *
-				</h3>
+				</legend>
 				<!-- Companions quantity -->
 				<div class="companions-counter">
 					<a class="companions-counter__subtract" href="#"></a>
@@ -186,12 +186,12 @@
 						>
 					</div>
 				</div>
-			</div>
+			</fieldset>
 			<!-- Travel achievements -->
-			<div class="achievements">
-				<h3 class="achievements__title">
+			<fieldset class="achievements">
+				<legend class="achievements__title">
 					Ваши безбашенные достижения в путешествии
-				</h3>
+				</legend>
 				<label>
 					<input class="achievements__input"
 					type="checkbox" name="shark" checked
@@ -228,12 +228,12 @@
 					>
 					Разгромил отель
 				</label>
-			</div>
+			</fieldset>
 			<!-- Travel photos -->
-			<div class="photos">
-				<h3 class="photos__title">
+			<fieldset class="photos">
+				<legend class="photos__title">
 					Ваши фотографии из поездки *
-				</h3>
+				</legend>
 				<input class="photos__input"
 				type="file" name="photo"
 				>
@@ -312,7 +312,7 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</fieldset>
 			<input class="form-button__send"
 			type="submit" value="Отправить форму"
 			>
@@ -337,7 +337,7 @@
 					Facebook
 				</a>
 				<a class="social-block__link social-block__link--yt" href="#">
-					You Tube
+					YouTube
 				</a>
 			</div>
 			<div class="copyright">
@@ -374,7 +374,6 @@
 			Ок
 		</a>
 	</section>
-	<!-- JS -->
 	<!-- <script src="js/script.js"></script> -->
 </body>
 </html>
