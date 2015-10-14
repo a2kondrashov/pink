@@ -8,31 +8,33 @@
 <body>
 	<!-- Main header -->
 	<header class="main-header">
-		<!-- Header title -->
-		<h1 class="main-header__title">
-			Pink
-		</h1>
+		<!-- Header logo -->
+		<a class="logo" href="#">
+			<img class="logo__img"
+			src="http://placehold.it/150x80" width="150" height="80" alt="Pink"
+			>
+		</a>
 		<a class="main-header__toggle  main-header__toggle--close" href=""></a>
 		<!-- Main navigation -->
 		<nav class="main-nav">
 			<ul class="main-nav__list">
 				<li class="main-nav__item">
-					<a class="main-nav__link  main-nav__link--pick" href="#">
+					<a class="main-nav__link" href="#">
 						Информация
 					</a>
 				</li>
 				<li class="main-nav__item">
-					<a class="main-nav__link  main-nav__link--pick" href="#">
+					<a class="main-nav__link" href="#">
 						Блог
 					</a>
 				</li>
 				<li class="main-nav__item">
-					<a class="main-nav__link  main-nav__link--pick" href="#">
+					<a class="main-nav__link" href="#">
 						Отзывы
 					</a>
 				</li>
 				<li class="main-nav__item">
-					<a class="main-nav__link  main-nav__link--pick" href="#">
+					<a class="main-nav__link" href="#">
 						Конкурсы
 					</a>
 				</li>
@@ -48,7 +50,7 @@
 				Взгляните на жизнь иначе!
 			</h2>
 			<!-- Intro button -->
-			<a class="button-link  button-link--pressed" href="#">
+			<a class="download-btn" href="#">
 				Скачать приложение
 			</a>
 			<!-- OS logos -->
@@ -79,24 +81,32 @@
 		</section>
 		<!-- Features -->
 		<section class="features">
-			<h3 class="features__title">
-				Поднимает настроение
-			</h3>
-			<p class="features__text">
-				Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-			</p>
-			<h3 class="features__title">
-				Меняет мир вокруг
-			</h3>
-			<p class="features__text">
-				Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-			</p>
-			<h3 class="features__title">
-				Заводит новых друзей
-			</h3>
-			<p class="features__text">
-				Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-			</p>
+			<ul class="features__list">
+				<li class="feature__item">
+					<h3 class="features__title">
+						Поднимает настроение
+					</h3>
+					<p class="features__text">
+						Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+					</p>
+				</li>
+				<li class="feature__item">
+					<h3 class="features__title">
+						Меняет мир вокруг
+					</h3>
+					<p class="features__text">
+						Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+					</p>
+				</li>
+				<li class="feature__item">
+					<h3 class="features__title">
+						Заводит новых друзей
+					</h3>
+					<p class="features__text">
+						Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+					</p>
+				</li>
+			</ul>
 		</section>
 		<!-- Reviews-->
 		<section class="reviews">
@@ -104,7 +114,7 @@
 			<div class="reviews-slider">
 				<!-- Slide -->
 				<article class="review">
-					<h1 class="review__title">
+					<h1 class="review__user">
 						Николай Петров
 					</h1>
 					<p class="review__text">
@@ -113,7 +123,7 @@
 				</article>
 				<!-- Slide -->
 				<article class="review">
-					<h1 class="review__title">
+					<h1 class="review__user">
 						Ipsum Lorem
 					</h1>
 					<p class="review__text">
@@ -122,7 +132,7 @@
 				</article>
 				<!-- Slide -->
 				<article class="review">
-					<h1 class="review__title">
+					<h1 class="review__user">
 						Lorem Ipsum
 					</h1>
 					<p class="review__text">
@@ -159,8 +169,8 @@
 					<!-- Application feature set -->
 					<ul class="price-plan__feature-list">
 						<li class="price-plan__feature">
-							<label class="price-plan__feature-label">
-								<input class="price-plan__feature-item" type="checkbox" checked disabled>
+							<label class="price-plan__feature-label" for="filter">
+								<input class="price-plan__feature-item" type="checkbox" id="filter" checked disabled>
 								Розовый фильтр
 							</label>
 						</li>
@@ -252,36 +262,43 @@
 				<span class="paginator__item"></span>
 			</div>
 		</section>
-	</div>
-	<!-- Main footer -->
-	<footer class="main-footer">
 		<!-- Contacts -->
-		<div class="contacts">
+		<section class="contacts">
 			<h2 class="contacts__title">
 				Остались вопросы? Свяжитесь с нами!
 			</h2>
-			<h3 class="contacts__call-us">
-				Звоните:
-			</h3>
-			<a class="contacts__tel-link" href="tel:+78125556666">
-				+7 (812) 555-66-66
-			</a>
-			<h3 class="contacts__write-us">
-				Пишите:
-			</h3>
-			<a class="contacts__mail-link" href="mailto:mail@htmlacademy.ru">
-				mail@htmlacademy.ru
-			</a>
-			<h3 class="contacts__come-to-us">
-				Приезжайте в гости:
-			</h3>
-			<span class="contacts__address">ул. Большая Конюшенная, 19/8</span>
-		</div>
+			<ul class="contacts__list">
+				<li class="contacts__item">
+					<h3 class="contacts__call-us">
+						Звоните:
+					</h3>
+					<a class="contacts__tel-link" href="tel:+78125556666">
+						+7 (812) 555-66-66
+					</a>
+				</li>
+				<li class="contacts__item">
+					<h3 class="contacts__write-us">
+						Пишите:
+					</h3>
+					<a class="contacts__mail-link" href="mailto:mail@htmlacademy.ru">
+						mail@htmlacademy.ru
+					</a>
+				</li>
+				<li class="contacts__item">
+					<h3 class="contacts__come-to-us">
+						Приезжайте в гости:
+					</h3>
+					<span class="contacts__address">ул. Большая Конюшенная, 19/8</span>
+				</li>
+			</ul>
+		</section>
 		<!-- Map -->
 		<div class="contacts__map">
 		</div>
+	</div>
+	<!-- Main footer -->
+	<footer class="main-footer">
 	</footer>
-	<!-- JS -->
 	<!-- <script src="js/script.js"></script> -->
 </body>
 </html>

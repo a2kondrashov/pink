@@ -8,31 +8,33 @@
 <body>
 	<!-- Main header -->
 	<header class="main-header">
-		<!-- Header title -->
-		<h1 class="main-header__title">
-			Pink
-		</h1>
+		<!-- Header logo -->
+		<a class="logo" href="#">
+			<img class="logo__img"
+			src="http://placehold.it/150x80" width="150" height="80" alt="Pink"
+			>
+		</a>
 		<a class="main-header__toggle  main-header__toggle--close" href=""></a>
 		<!-- Main navigation -->
 		<nav class="main-nav">
 			<ul class="main-nav__list">
 				<li class="main-nav__item">
-					<a class="main-nav__link  main-nav__link--pick" href="#">
+					<a class="main-nav__link" href="#">
 						Информация
 					</a>
 				</li>
 				<li class="main-nav__item">
-					<a class="main-nav__link  main-nav__link--pick" href="#">
+					<a class="main-nav__link" href="#">
 						Блог
 					</a>
 				</li>
 				<li class="main-nav__item">
-					<a class="main-nav__link  main-nav__link--pick" href="#">
+					<a class="main-nav__link" href="#">
 						Отзывы
 					</a>
 				</li>
 				<li class="main-nav__item">
-					<a class="main-nav__link  main-nav__link--pick" href="#">
+					<a class="main-nav__link" href="#">
 						Конкурсы
 					</a>
 				</li>
@@ -50,9 +52,9 @@
 		</section>
 		<!-- Promo -->
 		<section class="promo">
-			<p class="promo__text">
+			<h2 class="promo__text">
 				Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-			</p>
+			</h2>
 		</section>
 		<!-- Form -->
 		<form class="form" action="/action" method="post">
@@ -322,14 +324,11 @@
 	<!-- Main footer -->
 	<footer class="main-footer">
 		<div class="main-footer__title">
-			<div class="logo">
-				<h2 class="logo__title">
-					Pink
-				</h2>
+			<a class="logo" href="#">
 				<img class="logo__img"
-				src="http://placehold.it/50x50" width="50" height="50" alt="Pink logo"
+				src="http://placehold.it/150x80" width="150" height="80" alt="Pink"
 				>
-			</div>
+			</a>
 			<div class="social-block">
 				<a class="social-block__link social-block__link--tw" href="#">
 					Twitter
@@ -342,12 +341,12 @@
 				</a>
 			</div>
 			<div class="copyright">
-				<p class="copyright__text">
-					Разработано
-				</p>
-				<img class="copyright__logo"
-				src="http://placehold.it/20x20" width="20" height="20" alt="HTML Academy"
-				>
+				<a class="copyright__link" href="#">
+					<span class="copyright_text">Разработано</span>
+					<img class="copyright__logo"
+					src="http://placehold.it/20x20" width="20" height="20" alt="HTML Academy"
+					>
+				</a>
 			</div>
 		</div>
 	</footer>
