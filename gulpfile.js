@@ -66,7 +66,7 @@ gulp.task('handlebars', function () {
 			/* partials: {
 				footer: '<footer>the end</footer>'
 			}, */
-			batch: ['./src/templates/partials'],
+			batch: ['./src/templates/partials']
 			/* helpers: {
 				capitals: function (str) {
 					return str.fn(this).toUpperCase();
