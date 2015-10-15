@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Pink: Main</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Main header -->
+	<header class="main-header">
+		<!-- Header logo -->
+		<a class="logo" href="#">
+			<img
+				class="logo__img"
+				src="http://placehold.it/150x80"
+				width="150"
+				height="80"
+				alt="Pink"
+			>
+		</a>
+		<a class="main-header__toggle  main-header__toggle--close" href=""></a>
+		<!-- Main navigation -->
+		<nav class="main-nav">
+			<ul class="main-nav__list">
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">
+						Информация
+					</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">
+						Блог
+					</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">
+						Отзывы
+					</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">
+						Конкурсы
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Main -->
+	<div class="main">
+		<!-- Intro -->
+		<section class="intro">
+			<!-- Intro title-->
+			<h2 class="intro__title">
+				Взгляните на жизнь иначе!
+			</h2>
+			<!-- Intro button -->
+			<a class="download-btn" href="#">
+				Скачать приложение
+			</a>
+			<!-- OS logos -->
+			<div class="intro-os__logos">
+				<img
+					class="intro-os__item"
+					src="http://placehold.it/50x50"
+					width="50"
+					height="50"
+					alt="Apple"
+				>
+				<img
+					class="intro-os__item"
+					src="http://placehold.it/50x50"
+					width="50"
+					height="50"
+					alt="Android"
+				>
+				<img
+					class="intro-os__item"
+					src="http://placehold.it/50x50"
+					width="50"
+					height="50"
+					alt="Microsoft"
+				>
+			</div>
+			<!-- Intro text -->
+			<p class="intro__text">
+				Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows
+			</p>
+		</section>
+		<!-- Promo -->
+		<section class="promo">
+			<h2 class="promo__title">
+				Устали от серости мегаполиса?
+			</h2>
+			<h2 class="promo__title">
+				Нам есть, что вам предложить!
+			</h2>
+		</section>
+		<!-- Features -->
+		<section class="features">
+			<ul class="features__list">
+				<li class="feature__item">
+					<h3 class="features__title">
+						Поднимает настроение
+					</h3>
+					<p class="features__text">
+						Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+					</p>
+				</li>
+				<li class="feature__item">
+					<h3 class="features__title">
+						Меняет мир вокруг
+					</h3>
+					<p class="features__text">
+						Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+					</p>
+				</li>
+				<li class="feature__item">
+					<h3 class="features__title">
+						Заводит новых друзей
+					</h3>
+					<p class="features__text">
+						Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+					</p>
+				</li>
+			</ul>
+		</section>
+		<!-- Reviews-->
+		<section class="reviews">
+			<!-- Reviews slider -->
+			<div class="reviews-slider">
+				<!-- Slide -->
+				<article class="review">
+					<h1 class="review__user">
+						Николай Петров
+					</h1>
+					<p class="review__text">
+						&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+					</p>
+				</article>
+				<!-- Slide -->
+				<article class="review">
+					<h1 class="review__user">
+						Ipsum Lorem
+					</h1>
+					<p class="review__text">
+						&laquo; Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident!&raquo;
+					</p>
+				</article>
+				<!-- Slide -->
+				<article class="review">
+					<h1 class="review__user">
+						Lorem Ipsum
+					</h1>
+					<p class="review__text">
+						&laquo; Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident!&raquo;
+					</p>
+				</article>
+			</div>
+			<!-- Paginator -->
+			<div class="paginator">
+				<span class="paginator__item  paginator__item--active"></span>
+				<span class="paginator__item"></span>
+				<span class="paginator__item"></span>
+			</div>
+			<!-- Application screen -->
+			<img
+				class="app-screen"
+				src="http://placehold.it/160x270"
+				width="160"
+				height="270"
+				alt="iPhone"
+			>
+		</section>
+		<!-- Price plan -->
+		<section class="price-plan">
+			<!-- Price table slider -->
+			<div class="price-plan-slider">
+				<!-- Price slide -->
+				<div class="price-plan__item">
+					<!-- Price title -->
+					<div class="price-plan__title-wrap">
+						<h3 class="price-plan__title">
+							База
+						</h3>
+						<span class="price-plan__value">
+							1,99 USD
+						</span>
+					</div>
+					<!-- Application feature set -->
+					<ul class="price-plan__feature-list">
+						<li class="price-plan__feature">
+							<label class="price-plan__feature-label" for="filter">
+								<input
+									class="price-plan__feature-item"
+									type="checkbox"
+									id="filter"
+									checked
+									disabled
+								>
+								Розовый фильтр
+							</label>
+						</li>
+						<li class="price-plan__feature">
+							<label class="price-plan__feature-label">
+								<input
+									class="price-plan__feature-item"
+									type="checkbox"
+									disabled
+								>
+								Смайлики
+							</label>
+						</li>
+						<li class="price-plan__feature">
+							<label class="price-plan__feature-label">
+								<input
+									class="price-plan__feature-item"
+									type="checkbox"
+									disabled
+								>
+								Комментарии
+							</label>
+						</li>
+					</ul>
+				</div>
+				<!-- Price slide -->
+				<div class="price-plan__item">
+					<!-- Price title -->
+					<div class="price-plan__title-wrap">
+						<h3 class="price-plan__title">
+							Стандарт
+						</h3>
+						<span class="price-plan__value">
+							3,99 USD
+						</span>
+					</div>
+					<!-- Application feature set -->
+					<ul class="price-plan__feature-list">
+						<li class="price-plan__feature">
+							<label class="price-plan__feature-label">
+								<input
+									class="price-plan__feature-item"
+									type="checkbox"
+									checked
+									disabled
+								>
+								Розовый фильтр
+							</label>
+						</li>
+						<li class="price-plan__feature">
+							<label class="price-plan__feature-label">
+								<input
+									class="price-plan__feature-item"
+									type="checkbox"
+									checked
+									disabled
+								>
+								Смайлики
+							</label>
+						</li>
+						<li class="price-plan__feature">
+							<label class="price-plan__feature-label">
+								<input
+									class="price-plan__feature-item"
+									type="checkbox"
+									disabled
+								>
+								Комментарии
+							</label>
+						</li>
+					</ul>
+				</div>
+				<!-- Price slide -->
+				<div class="price-plan__item">
+					<!-- Price title -->
+					<div class="price-plan__title-wrap">
+						<h3 class="price-plan__title">
+							Анлим
+						</h3>
+						<span class="price-plan__value">
+							9,99 USD
+						</span>
+					</div>
+					<!-- Application feature set -->
+					<ul class="price-plan__feature-list">
+						<li class="price-plan__feature">
+							<label class="price-plan__feature-label">
+								<input
+									class="price-plan__feature-item"
+									type="checkbox"
+									checked
+									disabled
+								>
+								Розовый фильтр
+							</label>
+						</li>
+						<li class="price-plan__feature">
+							<label class="price-plan__feature-label">
+								<input
+									class="price-plan__feature-item"
+									type="checkbox"
+									checked
+									disabled
+								>
+								Смайлики
+							</label>
+						</li>
+						<li class="price-plan__feature">
+							<label class="price-plan__feature-label">
+								<input
+									class="price-plan__feature-item"
+									type="checkbox"
+									checked
+									disabled
+								>
+								Комментарии
+							</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Paginator -->
+			<div class="paginator">
+				<span class="paginator__item"></span>
+				<span class="paginator__item  paginator__item--active"></span>
+				<span class="paginator__item"></span>
+			</div>
+		</section>
+		<!-- Contacts -->
+		<section class="contacts">
+			<h2 class="contacts__title">
+				Остались вопросы? Свяжитесь с нами!
+			</h2>
+			<ul class="contacts__list">
+				<li class="contacts__item">
+					<h3 class="contacts__call-us">
+						Звоните:
+					</h3>
+					<a class="contacts__tel-link" href="tel:+78125556666">
+						+7 (812) 555-66-66
+					</a>
+				</li>
+				<li class="contacts__item">
+					<h3 class="contacts__write-us">
+						Пишите:
+					</h3>
+					<a class="contacts__mail-link" href="mailto:mail@htmlacademy.ru">
+						mail@htmlacademy.ru
+					</a>
+				</li>
+				<li class="contacts__item">
+					<h3 class="contacts__come-to-us">
+						Приезжайте в гости:
+					</h3>
+					<span class="contacts__address">ул. Большая Конюшенная, 19/8</span>
+				</li>
+			</ul>
+		</section>
+		<!-- Map -->
+		<div class="contacts__map">
+		</div>
+	</div>
+	<!-- Main footer -->
+	<footer class="main-footer">
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+</html>
