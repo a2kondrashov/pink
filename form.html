@@ -64,33 +64,36 @@
 		<form action="/action" method="post">
 			<!-- User's full name -->
 			<div class="user-block">
-				<label class="user-block__label">
+				<label class="user-block__label" for="user-name">
 					Имя: *
 				</label>
 				<input
 					class="user-block__input"
 					type="text"
 					name="name"
+					id="user-name"
 					placeholder="Введите ваше имя"
 					required
 				>
-				<label class="user-block__label">
+				<label class="user-block__label" for="user-surname">
 					Фамилия: *
 				</label>
 				<input
 					class="user-block__input"
 					type="text"
 					name="surname"
+					id="user-surname"
 					placeholder="Укажите фамилию"
 					required
 				>
-				<label class="user-block__label">
+				<label class="user-block__label" for="user-patronymic">
 					Отчество:
 				</label>
 				<input
 					class="user-block__input"
 					type="text"
 					name="patronymic"
+					id="user-patronymic"
 					placeholder="Ну и отчество тоже"
 				>
 			</div>
@@ -137,10 +140,11 @@
 					class="dates__input"
 					type="date"
 					name="departure-date"
+					id="departure"
 					value="2015-04-01"
 					required
 				>
-				<label class="dates__label">
+				<label class="dates__label" for="departure">
 					Дата выезда
 				</label>
 				<div class="dates-counter">
@@ -149,11 +153,12 @@
 						class="dates-counter__input"
 						type="text"
 						name="duration"
+						id="duration"
 						size="3"
 						placeholder="10 дней"
 					>
 					<a class="dates-counter__add" href="#"></a>
-					<label class="dates-counter__label">
+					<label class="dates-counter__label" for="duration">
 						Продолжительность
 					</label>
 				</div>
@@ -161,10 +166,11 @@
 					class="dates__input"
 					type="date"
 					name="return-date"
+					id="return"
 					value="2015-04-01"
 					readonly
 				>
-				<label class="dates__label">
+				<label class="dates__label" for="return">
 					Дата возвращения
 				</label>
 			</fieldset>
@@ -192,23 +198,25 @@
 						<span class="companion-details__num">1</span>
 					</div>
 					<div class="companion-details__col">
-						<label class="companion-details__label">
+						<label class="companion-details__label" for="companion-name-1">
 							Имя: *
 						</label>
 						<input
 							class="companion-details__input"
 							type="text"
-							name="companion-name"
+							name="companion-name-1"
+							id="companion-name-1"
 							placeholder="Введите ваше имя"
 							required
 						>
-						<label class="companion-details__label">
+						<label class="companion-details__label" for="companion-nick-1">
 							Прозвище:
 						</label>
 						<input
 							class="companion-details__input"
 							type="text"
-							name="companion-nick"
+							name="companion-nick-1"
+							id="companion-nick-1"
 							placeholder="Ну как же без этого!"
 						>
 					</div>
@@ -220,23 +228,25 @@
 						<span class="companion-details__num">2</span>
 					</div>
 					<div class="companion-details__col">
-						<label class="companion-details__label">
+						<label class="companion-details__label" for="companion-name-2">
 							Имя: *
 						</label>
 						<input
 							class="companion-details__input"
 							type="text"
-							name="companion-name"
+							name="companion-name-2"
+							id="companion-name-2"
 							placeholder="Введите ваше имя"
 							required
 						>
-						<label class="companion-details__label">
+						<label class="companion-details__label" for="companion-nick-2">
 							Прозвище:
 						</label>
 						<input
 							class="companion-details__input"
 							type="text"
-							name="companion-nick"
+							name="companion-nick-2"
+							id="companion-nick-2"
 							placeholder="Ну как же без этого!"
 						>
 					</div>
