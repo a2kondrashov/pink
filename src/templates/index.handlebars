@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pink: Main</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,7 +12,9 @@
 	<!-- Main -->
 	{{>main-index}}
 	<!-- Main footer -->
-	{{>footer}}
+	<footer class="main-footer main-footer--mobile">
+		{{>footer-inside}}
+	</footer>
 	<script src="js/script.js"></script>
 </body>
 </html>

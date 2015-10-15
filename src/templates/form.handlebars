@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pink: Form</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,7 +12,9 @@
 	<!-- Main -->
 	{{>main-form}}
 	<!-- Main footer -->
-	{{>footer}}
+	<footer class="main-footer">
+		{{>footer-inside}}
+	</footer>
 	<!-- Modal window success sending -->
 	{{>sucsess-popup}}
 	<!-- Modal windows failure sending -->

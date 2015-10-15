@@ -63,15 +63,7 @@ gulp.task('handlebars', function () {
 	gulp.src('src/templates/*.handlebars')
 		.pipe(handlebars(templateData, {
 			ignorePartials: true, //ignores the unknown partials
-			/* partials: {
-				footer: '<footer>the end</footer>'
-			}, */
 			batch: ['./src/templates/partials']
-			/* helpers: {
-				capitals: function (str) {
-					return str.fn(this).toUpperCase();
-				}
-			} */
 		}))
 		.pipe(rename({
 			extname: '.html'

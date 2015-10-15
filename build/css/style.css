@@ -1,2 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+@media (max-width: 320px) {
+  .main-footer--mobile {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=../css/style.css.map */
