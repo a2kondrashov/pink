@@ -2,23 +2,26 @@
  *    Main navigation   *
  ************************/
 
- .main-nav {
- 	/* Mobile styles */
- 	position: absolute;
- 	&__list {
+.main-nav {
+	/* Mobile styles */
+	display: none;
+	position: absolute;
+	top: 70px;
+	left: 0;
+	&__list {
 
- 	}
+	}
 
- 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
- 	/* Tablet styles */
-
-
- 	}
-
- 	@media(min-width: @desktop-breakpoint) {
- 	/* Desktop styles */
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+	/* Tablet styles */
 
 
- 	}
+	}
 
- }
+	@media(min-width: @desktop-breakpoint) {
+	/* Desktop styles */
+
+
+	}
+
+}

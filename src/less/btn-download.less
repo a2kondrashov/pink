@@ -1,0 +1,36 @@
+/************************
+ *    Intro button      *
+ ************************/
+
+.btn-download {
+	/* Mobile styles */
+	display: block;
+	width: 280px;
+	height: 55px;
+	padding-top: 15px;
+	margin-bottom: 27px;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 18px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	border: 2px solid white;
+	border-radius: 55px;
+	&:hover {
+		background-color: white;
+		color: @pink;
+	}
+	&:active {
+		opacity: .7;
+	}
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+	/* Tablet styles */
+		
+	}
+	@media(min-width: @desktop-breakpoint) {
+	/* Desktop styles */
+		
+	}
+}

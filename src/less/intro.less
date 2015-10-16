@@ -1,0 +1,57 @@
+/************************
+ *       Intro          *
+ ************************/
+
+.intro {
+	/* Mobile styles */
+	background-color: @bg-color;
+	background-image: url(../img/bg-mobile.jpg);
+	background-position-x: 0px;
+	background-position-y: 0px;
+	background-repeat: no-repeat;
+
+	&__title {
+		margin: 0;
+		margin-bottom: 348px;
+		padding-top: 91px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 24px;
+		color: white;
+		text-align: center;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 35px;
+		margin-bottom: 25px;
+	}
+	&__text {
+		margin: 0;
+		padding-bottom: 37px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 24px;
+		color: white;
+		text-align: center;
+	}
+
+	&__inner {
+		margin: 0 auto;
+	}
+	.m-inner();
+
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+		/* Tablet styles */
+
+		.t-inner();
+	}
+
+	@media(min-width: @desktop-breakpoint) {
+		/* Desktop styles */
+
+		.d-inner();
+	}
+}

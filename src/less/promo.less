@@ -1,12 +1,22 @@
 /************************
- *    Template name     *
+ *        Promo         *
  ************************/
 
-.classname {
+.promo {
 	/* Mobile styles */
 	&__inner {
+		margin: 0 auto;
+	}
+	&__title {
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 24px;
+		color: @promo-color;
+		text-align: center;
 	}
 	.m-inner();
+
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 	/* Tablet styles */
 		.t-inner();
