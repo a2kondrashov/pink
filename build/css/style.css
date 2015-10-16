@@ -7,9 +7,12 @@ html {
   box-sizing: inherit;
 }
 @media (max-width: 320px) {
-  .main-footer--mobile {
+  .main-footer--hide {
     display: none;
   }
+}
+.main-header {
+  min-width: 320px;
 }
 
 /*# sourceMappingURL=../css/style.css.map */
