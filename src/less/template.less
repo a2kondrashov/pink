@@ -1,0 +1,24 @@
+/************************
+ *    Template name     *
+ ************************/
+
+ .classname {
+ 	/* Mobile styles */
+
+ 	&__inner {
+
+ 	}
+ 	.m-inner();
+
+ 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+ 	/* Tablet styles */
+
+ 		.t-inner();
+ 	}
+
+ 	@media(min-width: @desktop-breakpoint) {
+ 	/* Desktop styles */
+
+ 		.d-inner();
+ 	}
+ }

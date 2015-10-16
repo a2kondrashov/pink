@@ -1,34 +1,31 @@
 /************************
- *     Main footer      *
+ *     Contacts         *
  ************************/
 
-.main-footer {
+.contacts {
 /* Mobile styles */
+
 	&__inner {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
 		margin: 0 auto;
 	}
 	.m-inner();
-	&--toggle {
-		display: none;
-	}
 
 @media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 /* Tablet styles */
-	.t-inner();
-	&--toggle {
-		display: block;
+	&__list {
+		display: flex;
 	}
+	.t-inner();
 }
 
 @media(min-width: @desktop-breakpoint) {
 /* Desktop styles */
-	.d-inner();
-	&--toggle {
-		display: block;
+	&__list {
+		display: flex;
 	}
+	.d-inner();
 }
 
 }
-
