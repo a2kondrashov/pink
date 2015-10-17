@@ -1,0 +1,31 @@
+/************************
+ *     Pagination       *
+ ************************/
+
+ .pagination {
+ 	/* Mobile styles */
+ 	display: flex;
+ 	justify-content: center;
+ 	&__item {
+  		display: block;
+		margin: 0 6px;
+		width: 12px;
+		height: 12px;
+		border: 3px solid #fff;
+		background-color: @pagination-bg-color;
+		border-radius: 50%;
+		&--active {
+			border-color: @pagination-border-color;
+			background-color: #fff;
+		}
+	}
+
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+		/* Tablet styles */
+
+	}
+	@media(min-width: @desktop-breakpoint) {
+		/* Desktop styles */
+
+	}
+}
