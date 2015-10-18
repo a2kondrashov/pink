@@ -12,6 +12,11 @@
 	max-width: 100%;
 	padding: 21px 0;
 	background-color: rgba(0,0,0,0.3);
+	&--menu-active {
+		background-color: @promo-color;
+		padding-bottom: 25px;
+		box-shadow: 0 1px black;
+	}
 
 	&__inner {
 		// position: relative;
@@ -49,11 +54,34 @@
 		&:hover, &:hover:before, &:hover:after {
 			background-color: @pink;
 		}
-		&:active {
-			opacity: .7;
+		&:active, &:active:before, &:active:after {
+			background-color: fade(@pink,30%);
 		}
 		&--close {
-			
+			width: 24px;
+			height: 24px;
+			// background-color: @promo-color;
+			background-color: transparent;
+			&:before {
+				top: 10px;
+				left: -2px;
+				width: 28px;
+				height: 4px;
+				transform: rotate(45deg);
+			}
+			&:after {
+				top: 10px;
+				left: -2px;
+				width: 28px;
+				height: 4px;
+				transform: rotate(-45deg);
+			}
+			&:hover, &:active {
+				background-color: transparent;
+			}
+			&:active:before, &:active:after {
+				background-color: fade(@pink,30%);
+			}
 		}
 	}
 	.m-inner();

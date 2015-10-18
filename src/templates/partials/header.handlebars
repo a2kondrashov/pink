@@ -1,10 +1,22 @@
-<header class="main-header">
+{{#active}}
+		<header class="main-header main-header--menu-active">
+	{{else}}
+		<header class="main-header">
+{{/active}}
 	<div class="main-header__inner">
 		<!-- Header logo -->
 		{{>logo}}
 		<!-- Menu toggle -->
-		<a class="main-header__toggle  main-header__toggle--close" href=""></a>
+		{{#active}}
+				<a class="main-header__toggle  main-header__toggle--close" href=""></a>
+			{{else}}
+				<a class="main-header__toggle" href=""></a>
+		{{/active}}
 		<!-- Main navigation -->
-		{{>nav}}
+		{{#active}}
+				{{>nav menu-active="main-nav--menu-active"}}
+			{{else}}
+				{{>nav}}
+		{{/active}}
 	</div>
 </header>

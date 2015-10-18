@@ -5,11 +5,43 @@
 .main-nav {
 	/* Mobile styles */
 	display: none;
-	position: absolute;
-	top: 70px;
-	left: 0;
-	&__list {
 
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	&__item {
+		display: block;
+	}
+	&__link {
+		display: block;
+		margin: 0 auto;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 63px;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: white;
+		background-color: @promo-color;
+		box-shadow: inset 0 1px fade(white,15%);
+		border-bottom: 1px solid black;
+		&:hover {
+			color: @pink;
+		}
+		&:active {
+			color: fade(@pink, 30%);
+		}
+	}
+
+	&--menu-active {
+		position: absolute;
+		display: table;
+		width: 100%;
+		top: 71px;
+		left: 0;
 	}
 
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
