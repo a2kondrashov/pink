@@ -1,0 +1,32 @@
+/************************
+ *         Map          *
+ ************************/
+
+.map {
+	/* Mobile styles */
+	position: relative;
+	display: block;
+	height: 200px;
+	background-color: #eae6dd;
+	background-image: url(../img/map-mobile.jpg);
+	background-position-x: center;
+	background-position-y: -10px;
+	background-repeat: no-repeat;
+	&:before {
+		position: absolute;
+		content: '';
+		display: block;
+		height: 35px;
+		width: 100%; 
+		background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' class='svg-triangle' viewBox='0 0 3000 35' preserveAspectRatio='none'><polygon points='0,0 3000,0 1500,35' fill='#fff' /></svg>");
+	}
+
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+	/* Tablet styles */
+
+	}
+	@media(min-width: @desktop-breakpoint) {
+	/* Desktop styles */
+
+	}
+}

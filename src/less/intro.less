@@ -4,9 +4,10 @@
 
 .intro {
 	/* Mobile styles */
+	.clearfix();
 	background-color: @bg-color;
 	background-image: url(../img/bg-mobile.jpg);
-	background-position-x: 0px;
+	background-position-x: center;
 	background-position-y: 0px;
 	background-repeat: no-repeat;
 
@@ -24,12 +25,14 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
-		padding: 0 35px;
-		margin: 28px 0;
+		align-items: baseline;
+		padding: 0 37px;
+		margin-top: 29px;
+		margin-bottom: 24px;
 	}
 	&__text {
 		margin: 0;
-		padding-bottom: 30px;
+		padding-bottom: 29px;
 		font-family: "Open Sans", Arial, sans-serif;
 		font-size: 14px;
 		font-weight: 300;
