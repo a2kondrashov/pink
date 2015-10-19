@@ -1,56 +1,10 @@
 <div class="main">
 	<!-- Intro -->
-	<section class="intro">
-		<div class="intro__inner">
-			<!-- Intro title-->
-			<h2 class="intro__title">
-				Взгляните на жизнь иначе!
-			</h2>
-			<!-- Intro button -->
-			<a class="btn-download" href="#">
-				Скачать приложение
-			</a>
-			<!-- OS logos -->
-			<div class="intro__list">
-				<img
-				class="intro__item"
-				src="../img/apple-logo.svg"
-				width="46"
-				height="57"
-				alt="Apple"
-				>
-				<img
-				class="intro__item"
-				src="../img/android-logo.svg"
-				width="42"
-				height="47"
-				alt="Android"
-				>
-				<img
-				class="intro__item"
-				src="../img/microsoft-logo.svg"
-				width="44"
-				height="42"
-				alt="Microsoft"
-				>
-			</div>
-			<!-- Intro text -->
-			<p class="intro__text">
-				Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-			</p>
-		</div>
-	</section>
+	{{>intro-index}}
+	<!-- Info -->
+	{{>info}}
 	<!-- Promo -->
-	<section class="promo">
-		<div class="promo__inner">
-			<h2 class="promo__title">
-				Устали от серости мегаполиса?
-			</h2>
-			<h2 class="promo__title">
-				Нам есть, что вам предложить!
-			</h2>
-		</div>
-	</section>
+	{{>promo}}
 	<!-- Features -->
 	{{>features}}
 	<!-- Reviews-->
