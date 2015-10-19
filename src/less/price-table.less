@@ -13,14 +13,8 @@
 	background-color: @bg-gray-color;
 	&__head {
 		width: 280px;
-		padding-top: 16px;
 		padding-bottom: 19px;
 		color: white;
-		font-family: "Open Sans", Arial, sans-serif;
-		font-size: 18px;
-		font-weight: 700;
-		line-height: 30px;
-		text-transform: uppercase;
 		border-top: 2px @promo-color;
 		border-bottom: 2px @promo-color;
 		background-color: @promo-color;
@@ -37,6 +31,21 @@
 			border-left: 2px solid #e5e5e5;
 			border-right: 2px @promo-color;
 		}
+		&--hit {
+			position: relative;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 73px;
+				height: 73px;
+				background-image: url(../img/hit-mobile.png);
+				// background-size: 73px;
+				background-position: -2px center;
+				background-repeat: no-repeat;
+				z-index: 1;
+			}
+		}
 	}
 	&__cost {
 		display: block;
@@ -44,6 +53,15 @@
 		font-size: 24px;
 		font-weight: 300;
 		line-height: 34px;
+	}
+	&__title {
+		display: block;
+		padding-top: 16px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 30px;
+		text-transform: uppercase;
 	}
 	&__row {
 		&:nth-child(2) td {
