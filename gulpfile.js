@@ -43,6 +43,13 @@ gulp.task('build', [
 ]);
 
 /******************************
+ * Build task
+ ******************************/
+gulp.task('server', [
+	'browser-sync'
+]);
+
+/******************************
  * Copy assets to build
  ******************************/
 gulp.task('copyAssets', function () {
