@@ -5,6 +5,7 @@
 .price-plan {
 	/* Mobile styles */
 	position: relative;
+	overflow: hidden;
 	background-color: @bg-gray-color;
 	&:before {
 		position: absolute;
@@ -16,6 +17,7 @@
 	}
 	&__inner {
 		margin: 0 auto;
+		padding-bottom: 48px;
 	}
 	.m-inner();
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
