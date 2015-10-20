@@ -1,3 +1,17 @@
 /* Layout styles */
 html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
 
+input {
+	border: 2px solid #e5e5e5;
+	outline: none;
+	&::-webkit-input-placeholder {
+		color: @promo-color;
+	}
+	&::-moz-placeholder {
+		color: @promo-color;
+		opacity:  1;
+	}
+	&:-ms-input-placeholder {
+		color: @promo-color;
+	}
+}
