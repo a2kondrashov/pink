@@ -2,9 +2,79 @@
 * Form Applications block *
 ***************************/
 
+// input[type="radio"]:checked + label:before {
+// 			border: 3px solid red;
+// 		}
+
 .applications {
 	/* Mobile styles */
 	// .clearfix();
+	padding-bottom: 2px;
+	background-color: @bg-gray-color;
+	&__fieldset {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__title {
+		width: 180px;
+		margin: 0 auto;
+		margin-bottom: 39px;
+		padding-top: 36px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		color: @pink;
+		text-align: center;
+		text-transform: uppercase;
+		.textoverflow();
+	}
+	&__label {
+		position: relative;
+		display: block;
+		margin-bottom: 45px;
+		padding-left: 58px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		color: @promo-color;
+		cursor: pointer;
+		&:before {
+			position: absolute;
+			top: -4px;
+			left: -1px;
+			content: "";
+			display: block;
+			width: 39px;
+			height: 39px;
+			border: 2px solid #e5e5e5;
+			border-radius: 50%;
+			background-color: white;
+
+		}
+		&:hover:before {
+			border-color: @promo-color;
+		}
+		&:active:before {
+			border-color: @pink;
+			border-image: none;
+		}
+	}
+
+	&__input {
+		display: none;
+		&:checked + label:before {
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iMzUuOTgzcHgiIGhlaWdodD0iMzUuOTgzcHgiIHZpZXdCb3g9IjAgMCAzNS45ODMgMzUuOTgzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNS45ODMgMzUuOTgzIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGNpcmNsZSBmaWxsPSIjRkZGRkZGIiBjeD0iMTcuOTkxIiBjeT0iMTcuOTkxIiByPSIxNy45OTEiLz4KPGNpcmNsZSBmaWxsPSIjRDIyODU2IiBjeD0iMTcuOTkxIiBjeT0iMTcuOTkxIiByPSI3Ljg2NiIvPgo8L3N2Zz4=);
+			background-size: 35px;
+			background-position: 0px center;
+			background-repeat: no-repeat;
+		}
+		&:checked + label:hover:before {
+			border-color: @pink;
+		}
+	}
 
 	&__inner {
 		margin: 0 auto;
