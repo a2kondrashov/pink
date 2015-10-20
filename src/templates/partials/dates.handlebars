@@ -15,23 +15,23 @@
 			<label class="dates__label" for="departure">
 				Дата выезда
 			</label>
-			<div class="dates-counter">
-				<a class="dates-counter__subtract" href="#"></a>
+			<div class="dates__counter">
+				<a class="dates__input dates__input--subtract" href="#"></a>
 				<input
-				class="dates-counter__input"
+				class="dates__input dates__input--duration"
 				type="text"
 				name="duration"
 				id="duration"
 				size="3"
 				placeholder="10 дней"
 				>
-				<a class="dates-counter__add" href="#"></a>
-				<label class="dates-counter__label" for="duration">
-					Продолжительность
-				</label>
+				<a class="dates__input dates__input--add" href="#"></a>
 			</div>
+			<label class="dates__label" for="duration">
+				Продолжительность
+			</label>
 			<input
-			class="dates__input"
+			class="dates__input dates__input--disabled"
 			type="date"
 			name="return-date"
 			id="return"

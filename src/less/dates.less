@@ -5,17 +5,126 @@
 .dates {
 	/* Mobile styles */
 	// .clearfix();
+	padding-top: 13px;
+	&__fieldset {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__title {
+		width: 240px;
+		margin: 0 auto;
+		margin-bottom: 41px;
+		padding-top: 36px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		color: @pink;
+		text-align: center;
+		text-transform: uppercase;
+		.textoverflow();
+	}
+	&__label {
+		display: block;
+		margin-top: 0;
+		margin-bottom: 17px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		color: @pink;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__input {
+		display: block;
+		width: 279px;
+		margin-bottom: 8px;
+		padding-left: 8px;
+		padding-top: 17px;
+		padding-bottom: 15px;
+		font-size: 18px;
+		// word-spacing: 2px;
+		color: @promo-color;
+		&:hover {
+			border-color: @promo-color;
+		}
+		&:active {
+			border-color: @pink;
+		}
+		&--duration {
+			width: 155px;
+			padding-top: 20px;
+			padding-bottom: 18px;
+			padding-left: 0px;
+			text-align: center;
+			border-right-color: transparent;
+			border-left-color: transparent;
+		}
+		&--disabled {
+			background-color: @bg-gray-color;
+		}
+		&--subtract {
+			position: relative;
+			width: 62px;
+			border: 2px solid #e5e5e5;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 28px;
+				left: 16px;
+				width: 27px;
+				height: 3px;
+				background-color: @promo-color;
+			}
+			&:active:before {
+				background-color: white;
+			}
+			&:active {
+				border-color: @promo-color;
+				background-color: @promo-color;
+			}
+		}
+		&--add {
+			position: relative;
+			width: 62px;
+			border: 2px solid #e5e5e5;
+			&:before, &:after {
+				content: "";
+				position: absolute;
+				top: 28px;
+				left: 16px;
+				width: 27px;
+				height: 3px;
+				background-color: @promo-color;
+			}
+			&:after {
+				transform: rotate(90deg);
+			}
+			&:active:before, &:active:after {
+				background-color: white;
+			}
+			&:active {
+				border-color: @promo-color;
+				background-color: @promo-color;
+			}
+		}
+	}
+	&__counter {
+		display: flex;
+	}
 
 	&__inner {
 		margin: 0 auto;
 	}
 	.m-inner();
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
-	/* Tablet styles */
+		/* Tablet styles */
 		.t-inner();
 	}
 	@media(min-width: @desktop-breakpoint) {
-	/* Desktop styles */
+		/* Desktop styles */
 		.d-inner();
 	}
 }
