@@ -1,0 +1,63 @@
+/***********************
+*  Form send button    *
+***********************/
+
+.send {
+	/* Mobile styles */
+	&__button {
+		width: 280px;
+		padding: 20px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 18px;
+		color: white;
+		text-align: center;
+		text-transform: uppercase;
+		border: 2px solid #2aab6d;
+		background-color: #2aab6d;
+		&:hover {
+			background-color: #1c9b5e;
+			border-color: #1c9b5e;
+		}
+		&:active {
+			color: #7dbd99;
+		}
+		&:disabled {
+			color: white;
+			background-color: #e5e5e5;
+			border-color: #e5e5e5;
+		}
+	}
+	&__footnote {
+		padding-top: 35px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		color: @promo-color;
+		text-align: center;
+		text-transform: uppercase;
+		&--color {
+			color: @pink;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+		padding-top: 48px;
+		padding-bottom: 80px;
+	}
+	.m-inner();
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+		/* Tablet styles */
+		.t-inner();
+	}
+	@media(min-width: @desktop-breakpoint) {
+		/* Desktop styles */
+		.d-inner();
+	}
+}
