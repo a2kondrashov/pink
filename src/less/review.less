@@ -1,0 +1,39 @@
+/************************
+ *       Review         *
+ ************************/
+
+.review {
+	/* Mobile styles */
+	margin-bottom: 32px;
+	&__user {
+		margin: 0;
+		margin-bottom: 14px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 30px;
+		color: @review-title-color;
+		text-align: center;
+	}
+	&__text {
+		margin: 0;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		color: @review-title-color;
+		text-align: center;
+	}
+	&--active {
+		display: block;
+	}
+
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+	/* Tablet styles */
+
+	}
+	@media(min-width: @desktop-breakpoint) {
+	/* Desktop styles */
+
+	}
+}

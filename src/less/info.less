@@ -1,0 +1,45 @@
+/************************
+ *       Info           *
+ ************************/
+
+.info {
+	/* Mobile styles */
+	.clearfix();
+	background-color: @bg-color;
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		padding: 0 37px;
+		margin-top: 30px;
+		margin-bottom: 24px;
+	}
+	&__text {
+		margin: 0;
+		padding-bottom: 29px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 24px;
+		color: white;
+		text-align: center;
+	}
+
+	&__inner {
+		margin: 0 auto;
+		padding-top: 28px;
+	}
+	.m-inner();
+
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+		/* Tablet styles */
+
+		.t-inner();
+	}
+
+	@media(min-width: @desktop-breakpoint) {
+		/* Desktop styles */
+
+		.d-inner();
+	}
+}

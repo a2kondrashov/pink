@@ -1,0 +1,37 @@
+/************************
+ *     Main footer      *
+ ************************/
+
+.main-footer {
+/* Mobile styles */
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	&--toggle {
+		display: none;
+	}
+	.m-inner();
+
+@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+/* Tablet styles */
+	.t-inner();
+	&--toggle {
+		display: block;
+	}
+}
+
+@media(min-width: @desktop-breakpoint) {
+/* Desktop styles */
+	.d-inner();
+	&--toggle {
+		display: block;
+	}
+}
+
+}
+

@@ -1,0 +1,113 @@
+/***********************
+*     Price table      *
+***********************/
+
+.price-table {
+	/* Mobile styles */
+	position: relative;
+	left: -541px;
+	margin-top: 91px ;
+	margin-bottom: 40px;
+	width: 1120px;
+	border-collapse: collapse;
+	background-color: @bg-gray-color;
+	&__head {
+		width: 280px;
+		padding-bottom: 19px;
+		color: white;
+		border-top: 2px @promo-color;
+		border-bottom: 2px @promo-color;
+		background-color: @promo-color;
+		&:nth-child(1) {
+			border: none;
+			border-bottom: 2px solid #e5e5e5;
+			background-color: transparent;
+		}
+		&:nth-child(2) {
+			border-left: 2px @promo-color;
+			border-right: 2px solid #e5e5e5;
+		}
+		&:nth-child(4) {
+			border-left: 2px solid #e5e5e5;
+			border-right: 2px @promo-color;
+		}
+		&--hit {
+			position: relative;
+			&:before {
+				position: absolute;
+				content: "";
+				display: block;
+				width: 73px;
+				height: 73px;
+				background-image: url(../img/hit-mobile.png);
+				// background-size: 73px;
+				background-position: -2px center;
+				background-repeat: no-repeat;
+				z-index: 1;
+			}
+		}
+	}
+	&__cost {
+		display: block;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 34px;
+	}
+	&__title {
+		display: block;
+		padding-top: 16px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 30px;
+		text-transform: uppercase;
+	}
+	&__row {
+		&:nth-child(2) td {
+			border-top: 2px @promo-color;
+		}
+	}
+	&__col {
+		width: 280px;
+		// overflow: hidden;
+		// text-overflow: ellipsis;
+		// white-space: nowrap;
+		padding: 14px;
+		padding-left: 24px;
+		color: @promo-color;
+		border: 2px solid #e5e5e5;
+		background-color: white;
+		&--no {
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjAiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iMjYuNzUycHgiIGhlaWdodD0iMjYuNzUycHgiIHZpZXdCb3g9IjAgMCAyNi43NTIgMjYuNzUyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNi43NTIgMjYuNzUyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iI2YyNWIyNiIgZD0iTTE1LjQ5NywxMy4zNzZMMjYuMzEyLDIuNTYyYzAuNTg2LTAuNTg1LDAuNTg2LTEuNTM1LDAtMi4xMjFzLTEuNTM1LTAuNTg2LTIuMTIxLDBMMTMuMzc2LDExLjI1NUwyLjU2MiwwLjQzOQoJYy0wLjU4Ni0wLjU4Ni0xLjUzNS0wLjU4Ni0yLjEyMSwwYy0wLjU4NiwwLjU4NS0wLjU4NiwxLjUzNSwwLDIuMTIxbDEwLjgxNCwxMC44MTVMMC40MzksMjQuMTljLTAuNTg2LDAuNTg2LTAuNTg2LDEuNTM1LDAsMi4xMjEKCWMwLjI5MywwLjI5MywwLjY3NywwLjQzOSwxLjA2MSwwLjQzOXMwLjc2OC0wLjE0NiwxLjA2MS0wLjQzOWwxMC44MTUtMTAuODE0TDI0LjE5LDI2LjMxMmMwLjI5MywwLjI5MywwLjY3NywwLjQzOSwxLjA2MSwwLjQzOQoJczAuNzY4LTAuMTQ2LDEuMDYxLTAuNDM5YzAuNTg2LTAuNTg2LDAuNTg2LTEuNTM1LDAtMi4xMjFMMTUuNDk3LDEzLjM3NnoiLz4KPC9zdmc+);
+			background-size: 28px;
+			background-position: 231px center;
+			background-repeat: no-repeat;
+		}
+		&--yes {
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjAiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iMzAuMzc1cHgiIGhlaWdodD0iMjEuNjg4cHgiIHZpZXdCb3g9IjAgMCAzMC4zNzUgMjEuNjg4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzMC4zNzUgMjEuNjg4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iIzNkYzY0NCIgZD0iTTI5LjkzNiwwLjQzOWMtMC41ODYtMC41ODYtMS41MzUtMC41ODYtMi4xMjEsMEwxMC4xODgsMTguMDY2bC03LjYyNy03LjYyN2MtMC41ODYtMC41ODYtMS41MzUtMC41ODYtMi4xMjEsMAoJcy0wLjU4NiwxLjUzNSwwLDIuMTIxbDguNjg4LDguNjg4YzAuMjkzLDAuMjkzLDAuNjc3LDAuNDM5LDEuMDYxLDAuNDM5czAuNzY4LTAuMTQ2LDEuMDYxLTAuNDM5TDI5LjkzNiwyLjU2MQoJQzMwLjUyMSwxLjk3NSwzMC41MjEsMS4wMjUsMjkuOTM2LDAuNDM5eiIvPgo8L3N2Zz4=);
+			background-size: 28px;
+			background-position: 231px center;
+			background-repeat: no-repeat;
+		}
+	}
+	&__text {
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		text-transform: uppercase;
+		&--hide {
+			display: block;
+		}
+	}
+
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+		/* Tablet styles */
+
+	}
+	@media(min-width: @desktop-breakpoint) {
+		/* Desktop styles */
+
+	}
+}

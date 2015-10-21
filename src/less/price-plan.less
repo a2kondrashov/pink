@@ -1,0 +1,31 @@
+/************************
+ *     Price plan       *
+ ************************/
+
+.price-plan {
+	/* Mobile styles */
+	position: relative;
+	overflow: hidden;
+	background-color: @bg-gray-color;
+	&:before {
+		position: absolute;
+		content: '';
+		display: block;
+		border-top: 0 solid transparent;
+		border-bottom: 24px solid transparent;
+		border-left: 100vw solid white;
+	}
+	&__inner {
+		margin: 0 auto;
+		padding-bottom: 48px;
+	}
+	.m-inner();
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+	/* Tablet styles */
+		.t-inner();
+	}
+	@media(min-width: @desktop-breakpoint) {
+	/* Desktop styles */
+		.d-inner();
+	}
+}

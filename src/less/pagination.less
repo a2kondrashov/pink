@@ -1,0 +1,39 @@
+/************************
+ *     Pagination       *
+ ************************/
+
+.pagination {
+	/* Mobile styles */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__item {
+		display: block;
+		box-sizing: content-box;
+		margin: 0 9px;
+		width: 6px;
+		height: 6px;
+		background-color: fade(@pagination-color, 30%);
+		border-radius: 50%;
+		&--active {
+			border: 3px solid @pagination-color;
+			background-color: #fff;
+		}
+		&:hover {
+			background-color: fade(@pagination-color, 60%);
+			cursor: pointer;
+		}
+		&:active {
+			background-color: fade(@pagination-color, 10%);
+		}
+	}
+
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+		/* Tablet styles */
+
+	}
+	@media(min-width: @desktop-breakpoint) {
+		/* Desktop styles */
+
+	}
+}

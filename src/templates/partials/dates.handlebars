@@ -1,0 +1,46 @@
+<div class="dates">
+	<div class="dates__inner">
+		<fieldset class="dates__fieldset">
+			<legend class="dates__title">
+				Когда вы путешествовали? *
+			</legend>
+			<input
+			class="dates__input"
+			type="date"
+			name="departure-date"
+			id="departure"
+			value="2015-04-01"
+			required
+			>
+			<label class="dates__label" for="departure">
+				Дата выезда
+			</label>
+			<div class="dates__counter">
+				<a class="dates__input dates__input--subtract" href="#"></a>
+				<input
+				class="dates__input dates__input--duration"
+				type="text"
+				name="duration"
+				id="duration"
+				size="3"
+				placeholder="10 дней"
+				>
+				<a class="dates__input dates__input--add" href="#"></a>
+			</div>
+			<label class="dates__label" for="duration">
+				Продолжительность
+			</label>
+			<input
+			class="dates__input dates__input--disabled"
+			type="date"
+			name="return-date"
+			id="return"
+			value="2015-04-01"
+			readonly
+			>
+			<label class="dates__label" for="return">
+				Дата возвращения
+			</label>
+		</fieldset>
+	</div>
+</div>

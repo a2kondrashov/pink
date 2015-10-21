@@ -1,0 +1,86 @@
+/***********************
+* Form achievements    *
+***********************/
+
+.achievements {
+	/* Mobile styles */
+	// .clearfix();
+
+	&__fieldset {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__title {
+		width: 250px;
+		margin: 0 auto;
+		margin-bottom: 43px;
+		padding-top: 46px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		color: @pink;
+		text-align: center;
+		text-transform: uppercase;
+		.textoverflow();
+	}
+	&__label {
+		position: relative;
+		display: block;
+		margin-bottom: 52px;
+		padding-left: 60px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		color: @promo-color;
+		cursor: pointer;
+		&:before {
+			position: absolute;
+			top: -4px;
+			left: -1px;
+			content: "";
+			display: block;
+			width: 39px;
+			height: 39px;
+			border: 2px solid #e5e5e5;
+			border-radius: 3px;
+			background-color: white;
+
+		}
+		&:hover:before {
+			border-color: @promo-color;
+		}
+		&:active:before {
+			border-color: @pink;
+			border-image: none;
+		}
+	}
+
+	&__input {
+		display: none;
+		&:checked + label:before {
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjAiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iMzAuMzc1cHgiIGhlaWdodD0iMjEuNjg4cHgiIHZpZXdCb3g9IjAgMCAzMC4zNzUgMjEuNjg4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzMC4zNzUgMjEuNjg4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iI2QyMjg1NiIgZD0iTTI5LjkzNiwwLjQzOWMtMC41ODYtMC41ODYtMS41MzUtMC41ODYtMi4xMjEsMEwxMC4xODgsMTguMDY2bC03LjYyNy03LjYyN2MtMC41ODYtMC41ODYtMS41MzUtMC41ODYtMi4xMjEsMAoJcy0wLjU4NiwxLjUzNSwwLDIuMTIxbDguNjg4LDguNjg4YzAuMjkzLDAuMjkzLDAuNjc3LDAuNDM5LDEuMDYxLDAuNDM5czAuNzY4LTAuMTQ2LDEuMDYxLTAuNDM5TDI5LjkzNiwyLjU2MQoJQzMwLjUyMSwxLjk3NSwzMC41MjEsMS4wMjUsMjkuOTM2LDAuNDM5eiIvPgo8L3N2Zz4=);
+			background-size: 24px;
+			background-position: 6px 9px;
+			background-repeat: no-repeat;
+		}
+		&:checked + label:hover:before {
+			border-color: @pink;
+		}
+	}
+
+	&__inner {
+		margin: 0 auto;
+	}
+	.m-inner();
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+	/* Tablet styles */
+		.t-inner();
+	}
+	@media(min-width: @desktop-breakpoint) {
+	/* Desktop styles */
+		.d-inner();
+	}
+}
