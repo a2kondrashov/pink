@@ -63,12 +63,12 @@
 			width: 62px;
 			padding-left: 25px;
 			border: 2px solid #e5e5e5;
-			border-radius: 3px;
+			border-radius: 3px 0 0 3px;
 			border-right: none;
 			pointer-events: none;
 		}
 		&--qty {
-			width: 155px;
+			width: 151px;
 			margin-bottom: 0;
 			padding-top: 20px;
 			padding-bottom: 18px;
@@ -76,6 +76,7 @@
 			text-align: center;
 			border-right-color: transparent;
 			border-left-color: transparent;
+			border-radius: 0;
 			background-color: @bg-gray-color;
 		}
 		&--subtract {
@@ -83,7 +84,7 @@
 			width: 62px;
 			margin-bottom: 0;
 			border: 2px solid #e5e5e5;
-			border-radius: 3px;
+			border-radius: 3px 0 0 3px;
 			background-color: white;
 			&:before {
 				content: "";
@@ -107,7 +108,7 @@
 			margin-bottom: 0;
 			width: 62px;
 			border: 2px solid #e5e5e5;
-			border-radius: 3px;
+			border-radius: 0 3px 3px 0;
 			background-color: white;
 			&:before, &:after {
 				content: "";
@@ -131,6 +132,9 @@
 		}
 		&--fix-word-space {
 			word-spacing: 1px;
+		}
+		&--fix-corners {
+			border-radius: 0 3px 3px 0;
 		}
 	}
 	&__details {

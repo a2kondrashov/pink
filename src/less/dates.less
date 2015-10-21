@@ -55,13 +55,14 @@
 			border-color: @pink;
 		}
 		&--duration {
-			width: 155px;
+			width: 151px;
 			padding-top: 20px;
 			padding-bottom: 18px;
 			padding-left: 0px;
 			text-align: center;
 			border-right-color: transparent;
 			border-left-color: transparent;
+			border-radius: 0;
 		}
 		&--disabled {
 			background-color: @bg-gray-color;
@@ -70,7 +71,7 @@
 			position: relative;
 			width: 62px;
 			border: 2px solid #e5e5e5;
-			border-radius: 3px;
+			border-radius: 3px 0 0 3px;
 			&:before {
 				content: "";
 				position: absolute;
@@ -92,7 +93,7 @@
 			position: relative;
 			width: 62px;
 			border: 2px solid #e5e5e5;
-			border-radius: 3px;
+			border-radius: 0 3px 3px 0;
 			&:before, &:after {
 				content: "";
 				position: absolute;
