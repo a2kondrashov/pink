@@ -1,0 +1,42 @@
+/***********************
+*      Timer block     *
+***********************/
+
+.timer {
+	/* Mobile styles */
+	.clearfix();
+	position: relative;
+
+	&__img {
+		width: 262px; 
+		height: 302px;
+	}
+
+	&:before {
+		content: "24";
+		position: absolute;
+		top: 63px;
+		left: 24px;
+		width: 215px;
+		height: 215px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 105px;
+		font-weight: 700;
+		line-height: 182px;
+		color: @pink;
+		text-align: center;
+		border: 12px solid @pink;
+		border-radius: 50%;
+		border-color: @pink;
+		background-color: white;
+	}
+
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+	/* Tablet styles */
+
+	}
+	@media(min-width: @desktop-breakpoint) {
+	/* Desktop styles */
+
+	}
+}

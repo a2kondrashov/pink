@@ -14,15 +14,6 @@
 		border-bottom: 35px solid transparent;
 		border-left: 100vw solid white;
 	}
-	// &:after {
-	// 	position: absolute;
-	// 	content: '';
-	// 	display: block;
-	// 	bottom: 0;
-	// 	width: 100vw;
-	// 	height: 7px;
-	// 	background-color: white;
-	// }
 	&__list {
 		margin: 0;
 		margin-bottom: 9px;
@@ -66,13 +57,20 @@
 		order: 1;
 		padding-top: 77px;
 		padding-left: 43px;
+		margin-bottom: 0px;
+	}
+	&__item {
+		margin-bottom: 35px;
+		&:nth-child(3) {
+			margin-bottom: 0px;
+		}
 	}
 	&__title {
 		margin-bottom: 12px;
 		text-align: left;
 	}
 	&__text {
-		margin-bottom: 35px;
+		margin-bottom: 0;
 		text-align: left;
 	}
 	&__inner {
