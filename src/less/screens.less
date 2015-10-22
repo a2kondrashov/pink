@@ -1,37 +1,44 @@
 /************************
- *     App Screens      *
- ************************/
+*      App Screens      *
+*************************/
 
 .screens {
 	/* Mobile styles */
-	// .clearfix();
+
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	z-index: 5;
 
 	&__item {
-	margin: 0 61px;
-	padding-top: 33px;
-	background-image: url(../img/iphone-case-mobile@1x.png);
-	background-size: cover;
-	background-position: center 0;
-	background-repeat: no-repeat;
+		width: 158px;
+		height: 278px;
+		margin: 0 auto;
+		padding-top: 33px;
+		background-image: url(../img/screen-mobile-3.png);
+		background-size: cover;
+		background-position: center 0;
+		background-repeat: no-repeat;
 		&:nth-child(1),&:nth-child(2) {
 			display: none;
 		}
 	}
-	&__img {
-		display: block;
-		margin: 0 auto;
-	}
-
 
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
-	/* Tablet styles */
+		/* Tablet styles */
+
+		&__item {
+			width: 268px;
+			height: 481px;
+			margin: 0 auto;
+			padding: 0;
+			margin-top: 7px;
+			background-image: url(../img/iphone-screen-tablet-3@1x.png);
+		}
 
 	}
 	@media(min-width: @desktop-breakpoint) {
-	/* Desktop styles */
+		/* Desktop styles */
 
 	}
 }
