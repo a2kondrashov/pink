@@ -4,7 +4,8 @@
 
 .promo {
 	/* Mobile styles */
-	.clearfix();
+	// .clearfix();
+
 	&__inner {
 		margin: 0 auto;
 		padding-top: 42px;
@@ -20,6 +21,7 @@
 		line-height: 28px;
 		color: @promo-color;
 		text-align: center;
+		.textoverflow();
 	}
 	&__text {
 		margin-top: 4px;
@@ -39,6 +41,23 @@
 
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 	/* Tablet styles */
+	&__inner {
+		padding-top: 53px;
+		padding-bottom: 44px;
+	}
+	&__title {
+		padding: 0 0;
+		margin-bottom: 4px;
+		font-size: 40px;
+		line-height: 40px;
+		&--narrow {
+			width: 400px;
+			margin: 0 auto;
+			line-height: 48px;
+		}
+	}
+
+
 		.t-inner();
 	}
 	@media(min-width: @desktop-breakpoint) {
