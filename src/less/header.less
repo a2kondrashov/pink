@@ -1,6 +1,6 @@
 /************************
- *     Main header      *
- ************************/
+*     Main header       *
+*************************/
 
 .main-header {
 	/* Mobile styles */
@@ -89,6 +89,16 @@
 
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 		/* Tablet styles */
+		padding-top: 27px;
+		padding-bottom: 40px;
+
+		&__toggle {
+			margin-top: 27px;
+			&--close {
+				margin-top: 18px;
+			}
+		}
+
 
 		.t-inner();
 	}
