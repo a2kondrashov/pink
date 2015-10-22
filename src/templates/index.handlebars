@@ -9,12 +9,14 @@
 </head>
 <body>
 	<!-- Main header -->
-	{{>header}}
-	{{!-- >header active="true" --}}
+	{{!-- >header --}}
+	{{>header active="true"}}
 	<!-- Main -->
 	{{>main-index}}
 	<!-- Main footer -->
 	{{>footer mobile="main-footer--toggle"}}
+	<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full" data-id="dgLoader"></script>
 	<script src="js/script.js"></script>
+	<script src="js/map.js"></script>
 </body>
 </html>
