@@ -4,6 +4,9 @@
 
 .main-footer {
 /* Mobile styles */
+	&--toggle {
+		display: none;
+	}
 
 	&__inner {
 		display: flex;
@@ -12,9 +15,6 @@
 		margin: 0 auto;
 	}
 
-	&--toggle {
-		display: none;
-	}
 	.m-inner();
 
 @media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
@@ -22,6 +22,11 @@
 	.t-inner();
 	&--toggle {
 		display: block;
+	}
+	&__inner {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
 	}
 }
 
