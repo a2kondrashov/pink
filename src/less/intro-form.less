@@ -1,17 +1,16 @@
 /************************
- *       Intro          *
+ *    Form intro        *
  ************************/
 
-.intro {
+.intro-form {
 	/* Mobile styles */
-	// .clearfix();
 	background-color: @bg-color;
-	background-image: url(../img/iphone-hand-mobile.png), url(../img/background-mobile@1x.jpg);
-	background-position: ~"calc(50% - 31px)" 172px, center -2px;
-	background-repeat: no-repeat, no-repeat;
+	background-image: url(../img/background-mobile@1x.jpg);
+	background-position: center -2px;
+	background-repeat: no-repeat;
 
 	&__title {
-		margin: 0;
+		padding-top: 53px;
 		font-family: "Open Sans", Arial, sans-serif;
 		font-size: 24px;
 		font-weight: 300;
@@ -22,23 +21,25 @@
 
 	&__inner {
 		margin: 0 auto;
-		padding-top: 87px;
-		padding-bottom: 315px;
+		padding-top: 25px;
+		padding-bottom: 34px;
 	}
 	.m-inner();
 
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 		/* Tablet styles */
-	background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/background-tablet@1x.jpg);
-	background-position: center 184px, center 0px;
+	background-image: url(../img/background-tablet@1x.jpg);
+	background-position: center 0px;
 
 	&__inner {
 		padding-top: 203px;
-		padding-bottom: 382px;
+		padding-bottom: 15px;
 	}
 	&__title {
 		width: 248px;
 		margin: 0;
+		margin-bottom: 55px;
+		padding-top: 98px;
 		padding-left: 55px;
 		font-size: 40px;
 		line-height: 48px;
