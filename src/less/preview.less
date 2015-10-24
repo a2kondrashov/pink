@@ -4,7 +4,6 @@
 
 .preview {
 	/* Mobile styles */
-	// .clearfix();
 
 	border-top: 2px solid #e5e5e5;
 	text-align: justify;
@@ -19,10 +18,13 @@
 		&:nth-child(3n+3) {
 			margin-right: 0;
 		}
+		width: 68px;
 	}
 	&__img {
 		display: block;
 		font-size: 0;
+		width: 100%;
+		height: auto;
 	}
 	&__filename {
 		width: 68px;
@@ -78,7 +80,35 @@
 
 
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
-		/* Tablet styles */
+	/* Tablet styles */
+	margin-top: 8px;
+	padding-top: 35px;
+	&__item {
+		width: 120px;
+		&:last-child {
+			margin-left: 33px;
+		}
+		padding-top: 30px;
+	}
+	&__filename {
+		width: 120px;
+		padding-top: 15px;
+		padding-bottom: 18px;
+		font-size: 14px;
+	}
+	&__del {
+		top: 4px;
+		right: -29px;
+		width: 55px;
+		height: 55px;
+
+		&:before, &:after {
+			top: 24px;
+			left: 14px;
+			width: 24px;
+			height: 2px;
+		}
+	}
 
 	}
 	@media(min-width: @desktop-breakpoint) {

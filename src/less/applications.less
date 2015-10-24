@@ -78,7 +78,22 @@
 	.m-inner();
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 	/* Tablet styles */
-		.t-inner();
+	background-color: white;
+	&__inner {
+		padding-top: 14px;
+	}
+	&__fieldset {
+		border: 2px solid #e5e5e5;
+		padding-top: 48px;
+		padding-bottom: 15px;
+		padding-left: 60px;
+	}
+	&__title {
+		margin: 0 auto;
+		padding-top: 0px;
+		width: 360px;
+	}
+	.t-inner();
 	}
 	@media(min-width: @desktop-breakpoint) {
 	/* Desktop styles */
