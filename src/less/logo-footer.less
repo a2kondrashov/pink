@@ -1,17 +1,29 @@
 .logo-footer {
 	font-size: 0;
+	&__img {
 		&:hover .pink {
 			fill: @pink;
 		}
 		&:active .fade {
 			fill: fade(@pink,30%);
 		}
+		&--desktop {
+			display: none;
+		}
+	}
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 	/* Tablet styles */
-		padding-top: 37px;
+		padding-top: 36px;
 	}
 	@media(min-width: @desktop-breakpoint) {
 	/* Desktop styles */
-
+		padding-top: 7px;
+		&__img {
+			display: none;
+			&--desktop {
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
 	}
 }

@@ -37,6 +37,7 @@
 	}
 	&__title {
 		margin: 0;
+		padding-top: 53px;
 		font-size: 50px;
 		line-height: 60px;
 		text-align: center;
@@ -46,8 +47,23 @@
 	}
 
 	@media(min-width: @desktop-breakpoint) {
-		/* Desktop styles */
+	/* Desktop styles */
+	background-image: url(../img/background-fullsize.jpg);
+	background-position: center 0px;
+	// background-size: cover;
+	background-size: 1280px auto;
 
+	&__inner {
+		padding-top: 128px;
+		padding-bottom: 101px;
+	}
+	&__title {
+		margin: 0;
+		padding-top: 45px;
+		font-size: 50px;
+		line-height: 60px;
+		text-align: center;
+	}
 	.d-inner();
 	}
 }

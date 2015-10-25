@@ -70,6 +70,31 @@
 	}
 	@media(min-width: @desktop-breakpoint) {
 	/* Desktop styles */
-		.d-inner();
+	&__inner {
+		padding: 0 70px;
+		padding-top: 92px;
+		padding-bottom: 33px;
+	}
+	&__title {
+		padding: 0 0;
+		margin-bottom: 4px;
+		font-size: 40px;
+		line-height: 40px;
+		&--narrow {
+			width: 400px;
+			margin: 0 auto;
+			line-height: 48px;
+		}
+	}
+	&__text {
+		margin: 0;
+		font-size: 18px;
+		line-height: 30px;
+		&--form {
+			display: inline;
+		}
+		white-space: pre-wrap;
+	}
+	.d-inner();
 	}
 }

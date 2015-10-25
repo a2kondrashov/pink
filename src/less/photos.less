@@ -4,7 +4,6 @@
 
 .photos {
 	/* Mobile styles */
-	// .clearfix();
 
 	background-color: @bg-gray-color;
 	&__fieldset {
@@ -14,7 +13,7 @@
 	}
 	&__title {
 		margin-bottom: 33px;
-		padding-left: 16px;
+		padding-left: 0px;
 		padding-top: 35px;
 		font-family: "Open Sans", Arial, sans-serif;
 		font-size: 14px;
@@ -65,16 +64,39 @@
 		margin-top: 58px;
 		padding: 0 58px;
 		padding-top: 34px;
-		padding-bottom: 20px;
+		padding-bottom: 17px;
 	}
 	&__title {
 		margin: 0 auto;
 		padding: 0px 25px;
 	}
+
 	.t-inner();
 	}
 	@media(min-width: @desktop-breakpoint) {
-		/* Desktop styles */
-		.d-inner();
+	/* Desktop styles */
+	margin-top: 56px;
+	background-color: white;
+	&__fieldset {
+		border: 2px solid #e5e5e5;
+		padding: 0 58px;
+		padding-top: 34px;
+		padding-bottom: 41px;
+	}
+	&__title {
+		margin: 0 auto;
+		padding: 0px 25px;
+	}
+	&__label {
+		color: white;
+		padding: 0;
+		line-height: 59px;
+		border: 2px solid @pink;
+		background-color: @pink;
+	}
+	&__input {
+		margin-bottom: 5px;
+	}
+	.d-inner();
 	}
 }

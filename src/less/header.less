@@ -90,7 +90,7 @@
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 		/* Tablet styles */
 		padding-top: 27px;
-		padding-bottom: 40px;
+		padding-bottom: 43px;
 
 		&__toggle {
 			margin-top: 27px;
@@ -102,8 +102,17 @@
 	}
 
 	@media(min-width: @desktop-breakpoint) {
-		/* Desktop styles */
-
+	/* Desktop styles */
+	padding-top: 27px;
+	padding-bottom: 37px;
+	&__toggle {
+		display: none;
+	}
+	&--menu-active {
+		background-color: transparent;
+		padding-bottom: 0px;
+		box-shadow: none;
+	}
 		.d-inner();
 	}
 }
