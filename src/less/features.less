@@ -80,7 +80,43 @@
 	}
 	@media(min-width: @desktop-breakpoint) {
 	/* Desktop styles */
+	&:before {
+		border-bottom: 92px solid transparent;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		font-size: 0;
+		order: 1;
+		padding: 0 30px;
+		padding-top: 55px;
+		margin-bottom: 0px;
 
+	}
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		width: 240px;
+		// margin-right: 35px;
+		// &:nth-child(3) {
+		// 	margin-right: 0px;
+		// }
+	}
+	&__title {
+		margin-bottom: 24px;
+		font-size: 30px;
+		line-height: 30px;
+		text-align: center;
+	}
+	&__text {
+		margin-bottom: 0;
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+	}
+	&__inner {
+
+	}
 	.d-inner();
 	}
 }

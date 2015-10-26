@@ -49,6 +49,22 @@
 
 	@media(min-width: @desktop-breakpoint) {
 		/* Desktop styles */
+	background-image: url(../img/iphone-hand-desktop@1x.png), url(../img/background-fullsize.jpg);
+	background-position: ~"calc(50% + 72px)" 209px, center 0px;
+	// background-size: cover;
+	background-size: auto auto, 1280px auto;
+
+	&__inner {
+		padding-top: 219px;
+		padding-bottom: 455px;
+	}
+	&__title {
+		width: 270px;
+		margin: 0;
+		padding-left: 32px;
+		font-size: 50px;
+		line-height: 60px;
+	}
 
 	.d-inner();
 	}

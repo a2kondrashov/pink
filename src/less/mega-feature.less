@@ -53,6 +53,44 @@
 	}
 	@media(min-width: @desktop-breakpoint) {
 	/* Desktop styles */
+	display: block;
+	padding-bottom: 63px;
+	background-color: @bg-gray-color;
+	&__inner {
+		display: flex;
+		padding-top: 65px;
+	}
+	&__wrapper {
+		padding-left: 65px;
+	}
+	&__title {
+		margin: 0;
+		margin-top: 96px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 30px;
+		color: black;
+		white-space: normal;
+	}
+	&__text {
+		width: 526px;
+		margin: 10px 0;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 18px;
+		line-height: 30px;
+		color: @promo-color;
+		white-space: normal;
+		margin-top: 23px;
+		margin-bottom: 31px;
+	}
+	&__link {
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+		color: @pink;
+	}
 		.d-inner();
 	}
 }
