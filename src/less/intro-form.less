@@ -6,6 +6,10 @@
 	/* Mobile styles */
 	background-color: @bg-color;
 	background-image: url(../img/background-mobile@1x.jpg);
+	@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: url(../img/background-mobile@2x.jpg);
+	}
+	background-size: 700px 488px;
 	background-position: center -2px;
 	background-repeat: no-repeat;
 
@@ -29,6 +33,10 @@
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 		/* Tablet styles */
 	background-image: url(../img/background-tablet@1x.jpg);
+	@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: url(../img/background-tablet@2x.jpg);
+	}
+	background-size: 1200px 729px;
 	background-position: center 0px;
 
 	&__inner {
