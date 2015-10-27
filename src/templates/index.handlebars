@@ -4,17 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pink: Main</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,cyrillic'>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<!-- Main header -->
-	{{>header}}
-	{{!-- >header active="true" --}}
+	{{!-->header --}}
+	{{>header active="true"}}
 	<!-- Main -->
 	{{>main-index}}
 	<!-- Main footer -->
 	{{>footer mobile="main-footer--toggle"}}
+	<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full" data-id="dgLoader"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

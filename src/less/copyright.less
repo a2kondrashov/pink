@@ -21,4 +21,20 @@
 	&:active .fade {
 		fill: fade(@promo-color,30%);
 	}
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+	/* Tablet styles */
+		padding-top: 50px;
+		padding-bottom: 0px;
+	}
+	@media(min-width: @desktop-breakpoint) {
+	/* Desktop styles */
+	padding-top: 22px;
+	padding-bottom: 0px;
+	&__text {
+		margin-top: 4px;
+		margin-right: 10px;
+		font-size: 18px;
+		line-height: 18px;
+	}
+	}
 }

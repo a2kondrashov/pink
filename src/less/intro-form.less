@@ -1,0 +1,77 @@
+/************************
+ *    Form intro        *
+ ************************/
+
+.intro-form {
+	/* Mobile styles */
+	background-color: @bg-color;
+	background-image: url(../img/background-mobile@1x.jpg);
+	@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: url(../img/background-mobile@2x.jpg);
+	}
+	background-size: 700px 488px;
+	background-position: center -2px;
+	background-repeat: no-repeat;
+
+	&__title {
+		padding-top: 53px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 28px;
+		color: white;
+		text-align: center;
+	}
+
+	&__inner {
+		margin: 0 auto;
+		padding-top: 25px;
+		padding-bottom: 34px;
+	}
+	.m-inner();
+
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+		/* Tablet styles */
+	background-image: url(../img/background-tablet@1x.jpg);
+	@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: url(../img/background-tablet@2x.jpg);
+	}
+	background-size: 1200px 729px;
+	background-position: center 0px;
+
+	&__inner {
+		padding-top: 128px;
+		padding-bottom: 79px;
+	}
+	&__title {
+		margin: 0;
+		padding-top: 53px;
+		font-size: 50px;
+		line-height: 60px;
+		text-align: center;
+	}
+
+	.t-inner();
+	}
+
+	@media(min-width: @desktop-breakpoint) {
+	/* Desktop styles */
+	background-image: url(../img/background-fullsize.jpg);
+	background-position: center 0px;
+	// background-size: cover;
+	background-size: 1280px auto;
+
+	&__inner {
+		padding-top: 128px;
+		padding-bottom: 101px;
+	}
+	&__title {
+		margin: 0;
+		padding-top: 45px;
+		font-size: 50px;
+		line-height: 60px;
+		text-align: center;
+	}
+	.d-inner();
+	}
+}

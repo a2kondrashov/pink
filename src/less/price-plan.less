@@ -4,7 +4,6 @@
 
 .price-plan {
 	/* Mobile styles */
-	position: relative;
 	overflow: hidden;
 	background-color: @bg-gray-color;
 	&:before {
@@ -22,10 +21,31 @@
 	.m-inner();
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 	/* Tablet styles */
-		.t-inner();
+	padding-bottom: 29px;
+
+	&__inner {
+		display: none
+	}
+
+
+	&:before {
+		border-bottom: 56px solid transparent;
+	}
+
+	.t-inner();
 	}
 	@media(min-width: @desktop-breakpoint) {
 	/* Desktop styles */
+	padding-bottom: 55px;
+
+	&__inner {
+		display: none
+	}
+
+
+	&:before {
+		border-bottom: 92px solid transparent;
+	}
 		.d-inner();
 	}
 }

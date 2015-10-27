@@ -1,4 +1,9 @@
+/************************
+*     Header logo       *
+*************************/
+
 .logo {
+	/* Mobile styles */
 	font-size: 0;
 	&__img {
 		&:hover path {
@@ -6,6 +11,36 @@
 		}
 		&:active path {
 			fill: fade(@pink,30%);
+		}
+	}
+	&--tablet {
+		display: none;
+	}
+	&--desktop {
+		display: none;
+	}
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+		/* Tablet styles */
+		&--mobile {
+			display: none;
+		}
+		&--tablet {
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+
+	@media(min-width: @desktop-breakpoint) {
+		/* Desktop styles */
+		&--mobile {
+			display: none;
+		}
+		&--tablet {
+			display: none;
+		}
+		&--desktop {
+			display: inline-block;
+			vertical-align: top;
 		}
 	}
 }

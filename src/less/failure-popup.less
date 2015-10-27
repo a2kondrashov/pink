@@ -1,0 +1,116 @@
+/**********************************
+*    Failure popup modal window   *
+**********************************/
+
+.failure-popup {
+	/* Mobile styles */
+	position: absolute;
+	display: block;
+	top: 1166px;
+	left: ~'calc(50% - 160px)';
+	width: 320px;
+	height: 289px;
+	padding-top: 40px;
+	background-color: white;
+	box-shadow: 0 6px 21px rgba(0,1,1,.15);
+
+	&--hide {
+		// display: none;
+	}
+	&__title {
+		margin: 0;
+		padding-bottom: 26px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 24px;
+		color: black;
+		text-align: center;
+	}
+	&__text {
+		margin: 0;
+		padding-bottom: 38px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 24px;
+		color: @promo-color;
+		text-align: center;
+	}
+	&__link {
+		display: block;
+		margin: 0 auto;
+		width: 280px;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 59px;
+		color: white;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		border: 2px solid #2aab6d;
+		border-radius: 3px;
+		background-color: #2aab6d;
+		&:hover {
+			background-color: #1c9b5e;
+			border-color: #1c9b5e;
+		}
+		&:active {
+			color: #7dbd99;
+		}
+	}
+
+	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+		/* Tablet styles */
+		width: 460px;
+		height: 362px;
+		top: 909px;
+		left: ~'calc(50% - 230px)';
+		border-radius: 5px;
+		padding-top: 36px;
+		&__title {
+			padding: 0 100px;
+			padding-bottom: 22px;
+			font-size: 30px;
+			line-height: 40px;
+		}
+		&__text {
+			padding: 0 70px;
+			padding-bottom: 38px;
+			font-size: 18px;
+			line-height: 24px;
+		}
+		&__link {
+			width: 300px;
+			font-size: 18px;
+			line-height: 59px;
+		}
+	}
+	@media(min-width: @desktop-breakpoint) {
+		/* Desktop styles */
+		width: 460px;
+		height: 362px;
+		top: 1723px;
+		left: ~'calc(50% - 230px)';
+		border-radius: 5px;
+		padding-top: 36px;
+		&__title {
+			padding: 0 100px;
+			padding-bottom: 22px;
+			font-size: 30px;
+			line-height: 40px;
+		}
+		&__text {
+			padding: 0 70px;
+			padding-bottom: 38px;
+			font-size: 18px;
+			line-height: 24px;
+		}
+		&__link {
+			width: 300px;
+			font-size: 18px;
+			line-height: 59px;
+		}
+	}
+}

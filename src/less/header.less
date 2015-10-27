@@ -1,6 +1,6 @@
 /************************
- *     Main header      *
- ************************/
+*     Main header       *
+*************************/
 
 .main-header {
 	/* Mobile styles */
@@ -89,14 +89,29 @@
 
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 		/* Tablet styles */
+		padding-top: 24px;
+		padding-bottom: 43px;
 
+		&__toggle {
+			margin-top: 27px;
+			&--close {
+				margin-top: 18px;
+			}
+		}
 		.t-inner();
 	}
 
 	@media(min-width: @desktop-breakpoint) {
-		/* Desktop styles */
-
+	/* Desktop styles */
+	padding-top: 27px;
+	padding-bottom: 37px;
+	&__toggle {
+		display: none;
+	}
+	// &--menu-active {
+	background-color: rgba(0,0,0,0.3);
+	box-shadow: none;
+	// }
 		.d-inner();
 	}
-
 }

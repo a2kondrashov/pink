@@ -4,7 +4,6 @@
 
 .achievements {
 	/* Mobile styles */
-	// .clearfix();
 
 	&__fieldset {
 		border: none;
@@ -77,10 +76,58 @@
 	.m-inner();
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 	/* Tablet styles */
-		.t-inner();
+	&__fieldset {
+		border: 2px solid #e5e5e5;
+		margin-top: 44px;
+		padding-top: 48px;
+		padding-left: 59px;
+	}
+	&__title {
+		width: 436px;
+		margin: 0 auto;
+		margin-bottom: 0px;
+		padding-top: 0px;
+	}
+	&__label {
+		padding-left: 59px;
+	}
+
+	.t-inner();
 	}
 	@media(min-width: @desktop-breakpoint) {
 	/* Desktop styles */
-		.d-inner();
+	&__fieldset {
+		display: inline-block;
+		vertical-align: top;
+		border: 2px solid #e5e5e5;
+		margin-top: 44px;
+		padding-top: 49px;
+		padding-left: 58px;
+	}
+	&__title {
+		width: 436px;
+		margin: 0 auto;
+		margin-bottom: 0px;
+		padding-top: 0px;
+	}
+	&__wrapper {
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 9px;
+		&:nth-child(2) {
+			width: 270px;
+			margin-right: 41px;
+		}
+		&:nth-child(3) {
+			width: 260px;
+			margin-right: 41px;
+		}
+		&:nth-child(4) {
+			width: 250px;
+			margin-right: 7px;
+		}
+	}
+
+	.d-inner();
 	}
 }
