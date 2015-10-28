@@ -25,7 +25,7 @@ gulp.task('default', [
 	'copyAssets',
 	'browser-sync',
 	'handlebars',
-	'pluginsConcat',
+	// 'pluginsConcat',
 	'jsConcat',
 	'less',
 	'watch'
@@ -37,7 +37,7 @@ gulp.task('default', [
 gulp.task('build', [
 	'copyAssets',
 	'handlebars',
-	'pluginsConcat',
+	// 'pluginsConcat',
 	'jsConcat',
 	'less-min'
 ]);
