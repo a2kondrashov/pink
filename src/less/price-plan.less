@@ -6,13 +6,9 @@
 	/* Mobile styles */
 	overflow: hidden;
 	background-color: @bg-gray-color;
-	&:before {
+	&__decor {
 		position: absolute;
-		content: '';
-		display: block;
-		border-top: 0 solid transparent;
-		border-bottom: 24px solid transparent;
-		border-left: 100vw solid white;
+		height: 25px;
 	}
 	&__inner {
 		margin: 0 auto;
@@ -26,10 +22,8 @@
 	&__inner {
 		display: none
 	}
-
-
-	&:before {
-		border-bottom: 56px solid transparent;
+	&__decor {
+		height: 56px;
 	}
 
 	.t-inner();
@@ -41,10 +35,8 @@
 	&__inner {
 		display: none
 	}
-
-
-	&:before {
-		border-bottom: 92px solid transparent;
+	&__decor {
+		height: 92px;
 	}
 		.d-inner();
 	}

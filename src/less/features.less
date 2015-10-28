@@ -6,13 +6,9 @@
 	/* Mobile styles */
 	position: relative;
 	background-color: @bg-gray-color;
-	&:before {
+	&__decor {
 		position: absolute;
-		content: '';
-		display: block;
-		border-top: 0 solid transparent;
-		border-bottom: 35px solid transparent;
-		border-left: 100vw solid white;
+		height: 33px;
 	}
 	&__list {
 		margin: 0;
@@ -50,8 +46,8 @@
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 	/* Tablet styles */
 
-	&:before {
-		border-bottom: 56px solid transparent;
+	&__decor {
+		height: 33px;
 	}
 	&__list {
 		order: 1;
@@ -80,8 +76,8 @@
 	}
 	@media(min-width: @desktop-breakpoint) {
 	/* Desktop styles */
-	&:before {
-		border-bottom: 92px solid transparent;
+	&__decor {
+		height: 92px;
 	}
 	&__list {
 		display: flex;

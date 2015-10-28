@@ -9,28 +9,24 @@
 	width: 100%;
 	height: 200px;
 	background-color: #eae6dd;
-	&:before {
+	&__decor {
 		position: absolute;
-		content: '';
-		display: block;
-		border-left: 50vw solid transparent;
-		border-right: 50vw solid transparent;
-		border-top: 35px solid white;
+		height: 35px;
 		z-index: 500;
 	}
 
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 	/* Tablet styles */
 	height: 378px;
-	&:before {
-		border-top: 73px solid white;
-	}
+		&__decor {
+			height: 73px;
+		}
 	}
 	@media(min-width: @desktop-breakpoint) {
 	/* Desktop styles */
 	height: 522px;
-		&:before {
-			border-top: 125px solid white;
+		&__decor {
+			height: 125px;
 		}
 	}
 }
