@@ -4,6 +4,8 @@
 
 .logo {
 	/* Mobile styles */
+	display: inline-block;
+	vertical-align: top;
 	font-size: 0;
 	&__img {
 		&:hover path {
@@ -21,6 +23,8 @@
 	}
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
 		/* Tablet styles */
+		display: inline-block;
+		vertical-align: top;
 		&--mobile {
 			display: none;
 		}
@@ -34,6 +38,7 @@
 		/* Desktop styles */
 		display: inline-block;
 		vertical-align: top;
+		float: left;
 		&--mobile {
 			display: none;
 		}

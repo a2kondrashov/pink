@@ -32,7 +32,7 @@
 		line-height: 30px;
 		color: @promo-color;
 		text-align: center;
-		&--form {
+		&--hide {
 			display: none;
 		}
 	}
@@ -43,6 +43,9 @@
 	&__inner {
 		padding-top: 53px;
 		padding-bottom: 44px;
+		&--form {
+			padding-bottom: 32px;
+		}
 	}
 	&__title {
 		padding: 0 0;
@@ -59,8 +62,12 @@
 		margin: 0;
 		font-size: 18px;
 		line-height: 30px;
-		&--form {
+		&--hide {
 			display: block;
+		}
+		&--form {
+			padding: 0 35px;
+			padding-top: 40px;
 		}
 	}
 
@@ -72,6 +79,10 @@
 		padding: 0 70px;
 		padding-top: 71px;
 		padding-bottom: 76px;
+		&--form {
+			padding-top: 92px;
+			padding-bottom: 32px;
+		}
 	}
 	&__title {
 		padding: 0 0;
@@ -88,7 +99,7 @@
 		margin: 0;
 		font-size: 18px;
 		line-height: 30px;
-		&--form {
+		&--hide {
 			display: inline;
 		}
 		white-space: pre-wrap;
