@@ -1,26 +1,25 @@
 {
-	"name": "gulp-frontend-boilerplate",
-	"version": "0.1.1",
-	"homepage": "https://github.com/fatuk/gulp-frontend-boilerplate",
-	"authors": [
-		"fatuk <fatukk@gmail.com>"
-	],
-	"moduleType": [
-		"amd"
-	],
-	"license": "MIT",
-	"private": true,
-	"ignore": [
-		"**/.*",
-		"node_modules",
-		"bower_components",
-		"test",
-		"tests"
-	],
-	"overrides": {
-
-	},
-	"dependencies": {
-		"jquery": "~2.1.1"
-	}
+  "name": "gulp-frontend-boilerplate",
+  "version": "0.1.1",
+  "homepage": "https://github.com/fatuk/gulp-frontend-boilerplate",
+  "authors": [
+    "fatuk <fatukk@gmail.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "overrides": {},
+  "dependencies": {
+    "moment": "~2.10.6",
+    "jquery": "~2.1.4"
+  }
 }

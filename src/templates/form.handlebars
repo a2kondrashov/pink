@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pink: Form</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,cyrillic'>
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,cyrillic'>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,10 +16,11 @@
 	<!-- Main footer -->
 	{{>footer form="main-footer__inner--form"}}
 	<!-- Modal window success sending -->
-	{{>success-popup}}
+	{{!-- >success-popup --}}
 	<!-- Modal windows failure sending -->
-	{{>failure-popup}}
+	{{!-- >failure-popup --}}
 	<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full" data-id="dgLoader"></script>
+	<script src="js/plugins.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
