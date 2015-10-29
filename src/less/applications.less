@@ -8,6 +8,7 @@
 	padding-bottom: 2px;
 	background-color: @bg-gray-color;
 	&__fieldset {
+		position: relative;
 		border: none;
 		margin: 0;
 		padding: 0;
@@ -89,6 +90,11 @@
 		padding-left: 60px;
 	}
 	&__title {
+		position: absolute;
+		display: block;
+		top: -10px;
+		left: ~"calc(50% - 180px)";
+		background-color: white;
 		margin: 0 auto;
 		padding-top: 0px;
 		width: 360px;
@@ -104,13 +110,17 @@
 	&__fieldset {
 		display: inline-block;
 		vertical-align: top;
-		// width: 936px;
 		padding-top: 47px;
 		padding-bottom: 15px;
 		padding-left: 60px;
 		border: 2px solid #e5e5e5;
 	}
 	&__title {
+		position: absolute;
+		display: block;
+		top: -10px;
+		left: ~"calc(50% - 180px)";
+		background-color: white;
 		margin: 0 auto;
 		padding-top: 0px;
 		width: 360px;
