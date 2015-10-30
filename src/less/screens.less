@@ -4,11 +4,11 @@
 
 .screens {
 	/* Mobile styles */
-
+	position: relative;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	z-index: 5;
+
 
 	&__item {
 		&:nth-child(3) {
@@ -25,6 +25,7 @@
 		&:nth-child(1),&:nth-child(2) {
 			display: none;
 		}
+		z-index: 5;
 	}
 
 	@media(min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
@@ -44,6 +45,7 @@
 				}
 				background-size: 268px 481px;
 			}
+			z-index: 5;
 		}
 
 	}
@@ -97,6 +99,7 @@
 				}
 				background-size: 292px 302px;
 			}
+			z-index: 5;
 		}
 	}
 }
